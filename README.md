@@ -16,13 +16,6 @@ it, simply add the following line to your Podfile:
 pod "ROKO.Mobi"
 ```
 
-## Author
-
-Alexey Golovenkov, alexey.golovenkov@rokolabs.com
-Denis Kempest, denis.kempest@rokolabs.com
-Maslov Sergey, sergey.maslov@rokolabs.com
-
-
 ## License
 
 ROKO.Mobi is available under the Mozilla Public License, version 2.0. See the LICENSE file for more info.
