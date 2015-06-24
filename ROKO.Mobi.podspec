@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.license          = 'MPL'
   s.homepage         = "https://github.com/ROKOLabs/ROKO.Mobi.iOS"
-  s.author          = "ROKO Labs"
+  s.author           = "ROKO Labs"
   s.summary          = "Very well ROKO.Mobi."
   s.description      = <<-DESC
 - 123
