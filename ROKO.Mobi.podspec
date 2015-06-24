@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ROKO.Mobi"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.license          = 'MPL'
   s.homepage         = "https://github.com/ROKOLabs/ROKO.Mobi.iOS"
   s.author           = "ROKO Labs"
@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
   s.vendored_frameworks = 'SDK/ROKOMobi.framework'
   s.public_header_files = 'SDK/ROKOMobi.framework/Versions/A/Headers/*.h'
-  s.resource_bundles = {'ROKOMobiResources' => ['SDK/ROKOMobiResources.bundle']}  
+  s.resource_bundles = {'ROKOMobiResources' => ['SDK/ROKOMobiResources.bundle/*’]}  
 end
