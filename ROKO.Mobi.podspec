@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
   s.vendored_frameworks = 'SDK/ROKOMobi.framework'
   s.public_header_files = 'SDK/ROKOMobi.framework/Versions/A/Headers/*.h'
-  s.resource_bundles = {'ROKOMobiResources' => ['SDK/ROKOMobiResources.bundle/*’]}  
+  s.resource_bundles = {'ROKOMobiResources' => ['SDK/ROKOMobiResources.bundle/*']}  
 end
