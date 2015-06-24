@@ -1,11 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "ROKO.Mobi"
-  s.version          = "0.0.1"
+  s.version          = "0.1.0"
   s.license          = 'MPL'
   s.homepage         = "https://github.com/ROKOLabs/ROKO.Mobi.iOS"
-  s.authors          = { "Alexey Golovenkov" => "alexey.golovenkov@rokolabs.com",
-                         "Denis Kempest" => "denis.kempest@rokolabs.com",  
-                         "Sergey Maslov" => "sergey.maslov@rokolabs.com" }
+  s.authors          = { "ROKO Labs" }
   s.summary          = "Very well ROKO.Mobi."
   s.description      = <<-DESC
 - 123
