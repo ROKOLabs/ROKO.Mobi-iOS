@@ -12,6 +12,22 @@ The ROKOStickers framework provides a means for taking photos, dressing them up 
 2) Install Xcode 6.0 or later.
 
 ###Configure your Xcode Project
+
+There are two ways to configure Xcode project: manual and via Cocoapods.
+
+#### Cocoapods
+Add the following line to your pod file:
+```
+pod "ROKO.Mobi"
+```
+and run 
+```
+$ pod install
+````
+in your project directory
+
+#### Manual
+
 1) Drag and drop Framework files:
 
 ```
