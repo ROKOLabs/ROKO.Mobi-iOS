@@ -8,7 +8,7 @@
 |[Roko Stickers][stickers]|
 |[Roko Share][share]|
 
-[demoapps]: https://github.com/ROKOLabs/ROKO.Mobi.iOS
+[demoapps]: https://github.com/ROKOLabs/ROKO.Mobi.iOS#get-our-demo-apps
 [stickers]: https://github.com/ROKOLabs/ROKO.Mobi.iOS#rokostickers-usage-guide
 [share]: https://github.com/ROKOLabs/ROKO.Mobi.iOS
 
