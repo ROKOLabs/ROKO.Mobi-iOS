@@ -9,8 +9,8 @@
 |[Roko Share][share]|
 
 [demoapps]: #get-our-demo-apps
-[stickers]: https://github.com/ROKOLabs/ROKO.Mobi.iOS#rokostickers-usage-guide
-[share]: https://github.com/ROKOLabs/ROKO.Mobi.iOS
+[stickers]: #rokostickers-usage-guide
+[share]: #rokoshare-usage-guide
 
 ##Get our Demo Apps 
 
@@ -387,3 +387,4 @@ ROKOStickersTrayScheme *trayScheme = [ROKOStickersTrayScheme new];
 	trayScheme.displayType = ROKOStickersTrayDisplayTypeIconOnly;
 ```
 
+##ROKOShare Usage Guide
