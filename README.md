@@ -422,7 +422,7 @@ Foundation.framework
 
 ####4) Generate the API Token by registering your project on ROKO Mobi Portal. Add «ROKOMobiAPIToken» key to your Xcode project’s info.plist and set the generated API Token as it’s value
 
-picture
+![](Images/APITokens.png)
 
 ####5) Include the following line to make the Framework available to your code:
 
@@ -500,7 +500,7 @@ break;
 
 ROKOShare appearance is highly customizable. 
 
-IMAGE
+![](Images/ROKOAppearance1.png)
 
 There are two ways to customize standard view: 
 
@@ -510,7 +510,7 @@ There are two ways to customize standard view:
 
 If you are using ROKO Mobi Portal to customize ROKOShare, all you need is login to the portal, go to the **Share - Settings** section and tune view appearence on your taste. 
 
-IMAGE
+![](Images/ROKOAppearance2.png)
 
 In this case you may skip the following sections
 
