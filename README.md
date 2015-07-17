@@ -497,3 +497,108 @@ break;
 ```
 
 ###Customizing ROKOShare Appearance:
+
+ROKOShare appearance is highly customizable. 
+
+IMAGE
+
+There are two ways to customize standard view: 
+
+- use ROKO Mobi portal where you could customize view in friendly interface
+
+- transform the standard view to a custom one with just a few lines of code
+
+If you are using ROKO Mobi Portal to customize ROKOShare, all you need is login to the portal, go to the **Share - Settings** section and tune view appearence on your taste. 
+
+IMAGE
+
+In this case you may skip the following sections
+
+###Customizing view from your code
+
+####1) Customizing «Background View»:
+
+You may change: - background color; 
+To do that implement the following code:
+
+```Objective-C
+controller.shouldLoadSchemeFromPortal = NO;   //configure scheme locally
+ROKOShareScheme* scheme =  [[ROKOShareScheme alloc]init];
+scheme.backgroundColor = [UIColor greenColor];
+controller.shareScheme = scheme; // apply local scheme to the controller
+```
+
+####2) Customizing «Prompt View»:
+
+You may change: - text color - font - title
+To do that implement the following code:
+
+```Objective-C
+scheme.preivewScheme = [[ROKOSharePreviewScheme alloc]init];
+scheme.preivewScheme.promptText = @"Custom prompt text";
+scheme.preivewScheme.promptTextFont = [[ROKOFontDataObject alloc]init];
+scheme.preivewScheme.promptTextFont.name = @"Georgia";
+scheme.preivewScheme.promptTextFont.size = @32;
+scheme.preivewScheme.promptTextFont.color = [UIColor redColor];
+```
+
+####3) Customizing «Message View»:
+
+You may change: - text color - font - text  
+
+```Objective-C
+scheme.preivewScheme.useStaticMode = YES;
+scheme.preivewScheme.staticText = @"Custom static text";
+scheme.preivewScheme.staticTextFont = [[ROKOFontDataObject alloc]init];
+scheme.preivewScheme.staticTextFont.name = @"Georgia";
+scheme.preivewScheme.staticTextFont.size = @16;
+scheme.preivewScheme.staticTextFont.color = [UIColor redColor];
+```
+
+####4) Customizing «Close Button» & «Cancel Button»:
+
+You may provide the following parameters specifically for 
+
+- text color 
+- title
+- image
+- font
+
+To do that implement the code below. Please note that the same code applies to «Cancel Button» To do that implement the following code:
+
+```Objective-C
+scheme.navigationScheme = [[ROKOShareNavigationScheme alloc] init];
+scheme.navigationScheme.useTextForCloseButton = YES;
+scheme.navigationScheme.closeButtonEnabled = YES;
+scheme.navigationScheme.closeButtonText = @"CLOSE";
+scheme.navigationScheme.closeButtonTextFont.name = @"Georgia";
+scheme.navigationScheme.closeButtonTextFont.size = @16;
+scheme.navigationScheme.closeButtonTextFont.color = [UIColor yellowColor];
+scheme.navigationScheme.doneButtonEnabled = YES;
+scheme.navigationScheme.useTextForDoneButton = NO;
+ROKOImageDataObject* imageDataObject = [[ROKOImageDataObject alloc]init];
+imageDataObject.image = [UIImage imageNamed:@"close"];
+scheme.navigationScheme.doneButtonImageFile = imageDataObject;
+```
+
+####5) Customize sharing services:
+
+You may change:
+- the order the services are displayed on screen
+- image for each service
+
+```Objective-C
+ROKOShareChannelScheme * twitterChannel = [[ROKOShareChannelScheme alloc]init];
+twitterChannel.type = kRSActivityTypeTwitter;
+twitterChannel.enabled = YES;
+twitterChannel.bodyText = @"shared in twitter";
+ROKOImageDataObject* twitterImage = [[ROKOImageDataObject alloc]init];
+twitterImage.image = [UIImage imageNamed:@"twitter"];
+ROKOShareChannelScheme * facebookChannel = [[ROKOShareChannelScheme alloc]init];
+twitterChannel.type = kRSActivityTypeFacebook;
+twitterChannel.enabled = YES;
+twitterChannel.bodyText = @"shared in facebook";
+ROKOImageDataObject* facebookImage = [[ROKOImageDataObject alloc]init];
+facebookImage.image = [UIImage imageNamed:@"facebook"];
+scheme.channels = @[twitterChannel,facebookChannel];
+```
