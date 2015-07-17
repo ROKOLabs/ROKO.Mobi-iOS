@@ -390,3 +390,110 @@ ROKOStickersTrayScheme *trayScheme = [ROKOStickersTrayScheme new];
 ```
 
 ##ROKOShare Usage Guide
+
+###Before You Begin:
+
+1) ROKOMobi framework requires iOS 7.0 or later.
+
+2) Install Xcode 6.0 or later.
+
+3) ROKOShare framework supports both iPhone and iPad user interface.
+
+###Configure Your Xcode Project:
+
+####1) Add Files
+
+Copy the ROKOMobi.framework and ROKOMobiResources.bundle into your project (select "Create groups for any added folders" if needed). These packages contain the static library, header files, and necessary resources (configuration files and images).
+
+####2) Add the following frameworks within the "Link Binary With Libraries" build phase of your project’s target:
+
+```
+ROKOMobi.framework
+Social.framework
+MessageUI.framework
+ImageIO.framework
+CoreLocation.framework
+QuartzCore.framework
+UIKit.framework
+Foundation.framework
+```
+
+####3) Make sure ROKOShare.bundle is included in your target's "Copy Bundle Resources" build phase.
+
+####4) Generate the API Token by registering your project on ROKO Mobi Portal. Add «ROKOMobiAPIToken» key to your Xcode project’s info.plist and set the generated API Token as it’s value
+
+picture
+
+####5) Include the following line to make the Framework available to your code:
+
+```Objective-C
+#import <ROKOMobi/ROKOMobi.h>
+```
+
+###Sharing Content with ROKOShare
+
+The ROKOShare framework provides a means to share rich content from your app into the sms, e-mail, Twitter, and Facebook, including text, photos, and URL attachments. The code examples in this page demonstrate how to customize and display the sharing dialog, as well be informed about posting results within your app.
+
+####1) Display the View Controller
+
+To integrate ROKOShare in your application, create an instance of RSActivityViewController and present in on screen:
+
+```Objective-C
+- (void)showROKOShare{
+RSActivityViewController *controller = [RSActivityViewController buildController]; self.modalPresentationStyle = UIModalPresentationCurrentContext; [self presentViewController:controller                   animated:YES                 completion:^{    self.modalPresentationStyle = UIModalPresentationFullScreen;
+}];
+}
+```
+
+Note: UIModalPresentationCurrentContext must be applied to your window’s rootViewController, i.e. if your view controller is embedded into UINavigationController, then UIModalPresentationCurrentContext must be applied to UINavigationController:
+
+```Objective-C
+  self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
+```
+
+####2) Provide the subject, message, image, and/or URL to be shared:
+
+```Objective-C
+- (void)showROKOShare
+{
+RSActivityViewController *controller = [RSActivityViewController buildController]; NSString *subject = @"New Post"; [controller addSubject:subject]; NSString *displayMessage = @"This message will be displayed in message view"; [controller addDisplayMessage:displayMessage]; NSString *shareMessage = @"This message will be shared";
+[controller addShareMessage:shareMessage]; UIImage *image = [UIImage imageNamed:@"myImage.png"]; [controller addImage:image]; NSURL *url = [NSURL URLWithString:@"http://www.rokolabs.com/"]; [controller addURL:url]; 
+}
+```
+Note: ROKOShare framework offers the option of using two different messages: 
+
+- display message: to be displayed in the view controller’s «Message View» (please refer to the image in «Customize ROKOShare appearance» section), set via addDisplayMessage:
+
+- share message: to be actually shared via social services, set via addShareMessage:.
+
+This option will only work if the «Message View» is not be editable (which is default).
+Please follow «Customizing ROKOShare appearance» section to get to know how to make the MessageView editable. 
+
+####3) Detect that the post was shared successfully from your app
+
+a) Declare that your view controller implements the RSActivityViewControllerDelegate protocol:
+
+```Objective-C
+@interface MyViewController : UIViewController <RSActivityViewControllerDelegate> 
+```
+
+b) Before you present the instance of RSActivityViewController, set your
+
+```Objective-C
+RSActivityViewController’s delegate:
+controller.delegate = self;
+```
+
+c) Implement delegate’s methods:
+
+```Objective-C
+- (void)activityControllerDidCancel:(RSActivityViewController *)controller
+{    NSLog(@"CANCEL BUTTON PRESSED");
+}
+- (void)activityController:(RSActivityViewController *)controller didFinishWithActivityType:(RSActivityType)activityType result: (RSActivityViewControllerResult)result {    switch (result) {        case kRSActivityViewControllerResultCancelled:            NSLog(@"SHARING CANCELLED");            break;        case kRSActivityViewControllerResultFailed:            NSLog(@"SHARING FAILED");            break;        case kRSActivityViewControllerResultDone:            NSLog(@"SHARED SUCCESSFULLY");            break;        default:
+break; 
+}
+}
+```
+
+###Customizing ROKOShare Appearance:
