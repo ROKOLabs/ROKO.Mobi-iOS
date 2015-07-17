@@ -16,7 +16,7 @@
 
 ##Get our Demo Apps 
 
-ROKO has showcased many of our components in Demo Apps on the App Store. Check out our demo, [ROKO Stickers](https://itunes.apple.com/sb/app/roko-stickers/id980258381?mt=8), which includes the Stickers and Share SDKs, on the Apple App store.
+ROKO has showcased many of our components in Demo Apps on the App Store. Check out our demo, <a href="https://itunes.apple.com/sb/app/roko-stickers/id980258381?mt=8" target="_blank">Roko Stickers</a>, which includes the Stickers and Share SDKs, on the Apple App store.
 
 ## ROKOStickers Usage Guide
 
@@ -283,7 +283,7 @@ Start with creation two strings on yout .plist.
 |Key|Value|
 ---|---
 |ROKOMobiAPIURL|rmsws.stage.rokolabs.com/external/v1|
-|ROKOMobiAPIToken|[%YOUR_API_FROM_SERVER%](https://portal.roko.mobi/settings)|
+|ROKOMobiAPIToken|<a href="https://portal.roko.mobi/settings" target="_blank">%YOUR_API_FROM_SERVER%</a>|
 
 Declare and initialize instance variable dataSource :
 
