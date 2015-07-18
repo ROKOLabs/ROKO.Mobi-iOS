@@ -24,7 +24,7 @@ The ROKOStickers framework provides a means for taking photos, dressing them up 
 
 ### Prerequisites
 
-1) ROKOStickers framework requires iOS 7.0 or later.
+1) ROKOStickers framework requires iOS 8.0 or later.
 
 2) Install Xcode 6.0 or later.
 
@@ -49,8 +49,6 @@ in your project directory
 
 ```
 ROKOMobi.framework
-
-ROKOMobiResources.bundle
 ```
 
 into your Xcode project (select "Create groups for any added folders" if needed). These packages contain the static libraries, header files, and necessary resources (configuration files and images).
@@ -61,23 +59,13 @@ into your Xcode project (select "Create groups for any added folders" if needed)
 
 ```
 ROKOMobi.framework 
-Social.framework 
-MessageUI.framework
-AVFoundation.framework 
-ImageIO.framework
-CoreGraphics.framework 
-QuartzCore.framework
 UIKit.framework 
 Foundation.framework
 ```
 
 ---
 
-3) Make sure ROKOStickers.bundle and ROKOShare.bundle are included in your target's "Copy Bundle Resources" build phase.
-
----
-
-4) Include the following line to make the Framework available to your code:
+3) Include the following line to make the Framework available to your code:
 
 ```
 #import <ROKOMobi/ROKOMobi.h>
@@ -99,7 +87,8 @@ Integrating ROKOStickers you may choose among several starting points:
 * User can take a new photo by invoking the camera
 * Or user can get images from their camera roll using the Image Picker
 
-On your view add two buttons (call it takePhotoButton and choosePhotoButton). Then connect them with apporopriate functions in your viewcontroller. And set self as datasource delegate if using local stickers (or another datasource if using internet stickers - this example descibes later). 
+On your view add two buttons (call it takePhotoButton and choosePhotoButton). Then connect them with apporopriate functions in your viewcontroller. And set self as datasource delegate if using local stickers (or another datasource if using internet stickers - this example descibes later).
+
 
 Use kRLComposerWorkflowTypeCamera - to start with Screen 1a. Camera View (Figure #1).
 
@@ -188,7 +177,8 @@ Apply your scheme at willAppear callback -
 
 #####b) provide sticker packs content from local resources:
 
-Create sticker packs for local resources. Make sure you add Resource directory to your project. Start with declaration of stickers collection add 2 ivars: 
+Create sticker packs for local resources. Make sure you add Resource directory to your project. Start with declaration of stickers collection add 2 ivars:
+
 
 ```Objective-C
 @interface ViewController () {
@@ -298,7 +288,8 @@ _dataSource = [[ROKOPortalStickersDataSource alloc]init];
 }
 ```
 
-Set composer datasource and refresh stickers list. 
+Set composer datasource and refresh stickers list.
+
 
 ```Objective-C
 - (IBAction)choosePhotoButtonPressed:(UIButton *)sender {
@@ -440,7 +431,12 @@ To integrate ROKOShare in your application, create an instance of RSActivityView
 
 ```Objective-C
 - (void)showROKOShare{
-RSActivityViewController *controller = [RSActivityViewController buildController]; self.modalPresentationStyle = UIModalPresentationCurrentContext; [self presentViewController:controller                   animated:YES                 completion:^{    self.modalPresentationStyle = UIModalPresentationFullScreen;
+RSActivityViewController *controller = [RSActivityViewController buildController];
+self.modalPresentationStyle = UIModalPresentationCurrentContext;
+[self presentViewController:controller
+                  animated:YES
+                completion:^{
+   self.modalPresentationStyle = UIModalPresentationFullScreen;
 }];
 }
 ```
@@ -456,8 +452,17 @@ Note: UIModalPresentationCurrentContext must be applied to your window’s rootV
 ```Objective-C
 - (void)showROKOShare
 {
-RSActivityViewController *controller = [RSActivityViewController buildController]; NSString *subject = @"New Post"; [controller addSubject:subject]; NSString *displayMessage = @"This message will be displayed in message view"; [controller addDisplayMessage:displayMessage]; NSString *shareMessage = @"This message will be shared";
-[controller addShareMessage:shareMessage]; UIImage *image = [UIImage imageNamed:@"myImage.png"]; [controller addImage:image]; NSURL *url = [NSURL URLWithString:@"http://www.rokolabs.com/"]; [controller addURL:url]; 
+RSActivityViewController *controller = [RSActivityViewController buildController];
+NSString *subject = @"New Post";
+[controller addSubject:subject];
+NSString *displayMessage = @"This message will be displayed in message view";
+[controller addDisplayMessage:displayMessage];
+NSString *shareMessage = @"This message will be shared";
+[controller addShareMessage:shareMessage];
+UIImage *image = [UIImage imageNamed:@"myImage.png"];
+[controller addImage:image];
+NSURL *url = [NSURL URLWithString:@"http://www.rokolabs.com/"];
+[controller addURL:url]; 
 }
 ```
 Note: ROKOShare framework offers the option of using two different messages: 
@@ -488,9 +493,24 @@ c) Implement delegate’s methods:
 
 ```Objective-C
 - (void)activityControllerDidCancel:(RSActivityViewController *)controller
-{    NSLog(@"CANCEL BUTTON PRESSED");
+{
+   NSLog(@"CANCEL BUTTON PRESSED");
 }
-- (void)activityController:(RSActivityViewController *)controller didFinishWithActivityType:(RSActivityType)activityType result: (RSActivityViewControllerResult)result {    switch (result) {        case kRSActivityViewControllerResultCancelled:            NSLog(@"SHARING CANCELLED");            break;        case kRSActivityViewControllerResultFailed:            NSLog(@"SHARING FAILED");            break;        case kRSActivityViewControllerResultDone:            NSLog(@"SHARED SUCCESSFULLY");            break;        default:
+- (void)activityController:(RSActivityViewController *)controller
+didFinishWithActivityType:(RSActivityType)activityType result:
+(RSActivityViewControllerResult)result
+{
+   switch (result) {
+       case kRSActivityViewControllerResultCancelled:
+           NSLog(@"SHARING CANCELLED");
+           break;
+       case kRSActivityViewControllerResultFailed:
+           NSLog(@"SHARING FAILED");
+           break;
+       case kRSActivityViewControllerResultDone:
+           NSLog(@"SHARED SUCCESSFULLY");
+           break;
+       default:
 break; 
 }
 }
