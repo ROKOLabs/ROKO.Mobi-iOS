@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char ROKOMobiVersionString[];
 #import <ROKOMobi/ROKOStickers.h>
 #import <ROKOMobi/ROKOShare.h>
 #import <ROKOMobi/ROKOLogger.h>
+#import <ROKOMobi/ROKOPush.h>

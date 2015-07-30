@@ -23,4 +23,6 @@
  */
 - (void)addEvent:(NSString *)eventTitle withParameters:(NSDictionary *)eventParameters;
 
+@property (nonatomic, strong) NSUUID *sessionId;
+
 @end
