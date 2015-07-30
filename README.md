@@ -1,6 +1,6 @@
 # Roko Mobi iOS
 
-[![Platform](https://img.shields.io/cocoapods/p/ROKO.Mobi.svg?style=flat)](http://cocoapods.org/pods/ROKO.Mobi)
+[![Platform](https://img.shields.io/cocoapods/v/ROKO.Mobi.svg?style=flat)](http://cocoapods.org/pods/ROKO.Mobi) [![Platform](https://img.shields.io/cocoapods/p/ROKO.Mobi.svg?style=flat)](http://cocoapods.org/pods/ROKO.Mobi)
 
 *This is a repository of all ROKO Mobi open source iOS SDKs. The information below should serve as a usage guide for our iOS SDKs. See the table of contents below for a complete list of the content featured in this document.*
 
