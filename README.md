@@ -449,22 +449,17 @@ Note: UIModalPresentationCurrentContext must be applied to your window’s rootV
   self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
 ```
 
-####2) Provide the subject, message, image, and/or URL to be shared:
+####2) Provide the subject, message, image, video, and/or URL to be shared:
 
 ```Objective-C
 - (void)showROKOShare
 {
-RSActivityViewController *controller = [RSActivityViewController buildController];
-NSString *subject = @"New Post";
-[controller addSubject:subject];
-NSString *displayMessage = @"This message will be displayed in message view";
-[controller addDisplayMessage:displayMessage];
-NSString *shareMessage = @"This message will be shared";
-[controller addShareMessage:shareMessage];
-UIImage *image = [UIImage imageNamed:@"myImage.png"];
-[controller addImage:image];
-NSURL *url = [NSURL URLWithString:@"http://www.rokolabs.com/"];
-[controller addURL:url]; 
+	RSActivityViewController *controller = [RSActivityViewController buildController];
+	controller.displayMessage = @"Sample text to be shared with image and video";
+	NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"path_to_video_file" ofType:@"mov"];
+	controller.videoData = [[NSData alloc] initWithContentsOfFile:videoPath];
+	controller.image = [UIImage imageNamed:@"imagesample.jpeg"];
+	controller.URL = [NSURL URLWithString:@"http://rokolabs.com"];
 }
 ```
 Note: ROKOShare framework offers the option of using two different messages: 
