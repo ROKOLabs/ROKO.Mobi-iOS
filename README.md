@@ -10,11 +10,13 @@
 |[Roko Stickers][stickers]|
 |[Roko Share][share]|
 |[Roko Push][push]|
+|[Roko Analytics][analytics]|
 
 [demoapps]: #get-our-demo-apps
 [stickers]: #rokostickers-usage-guide
 [share]: #rokoshare-usage-guide
 [push]: #rokopush-usage-guide
+[analytics]: #rokoanalytics-usage-guide
 
 ##Get our Demo Apps 
 
@@ -664,3 +666,25 @@ You can use a very simple API call to handle a remote notification
 	[self.pushComponent handleNotification:userInfo];
 }
 ```
+## ROKOAnalytics usage guide
+
+ROKOAnalytics is a part of ROKOFramework that allows your application to send information about different events in the app to ROKO Portal and generate and review variety reports. It has the only public class:
+
+### ROKOLogger
+
+ROKOLogger is the main class with the only significant method:
+```Objective-C
+/**
+ *  Sends analytic event to ROKO Analytics. Stores message in local db if server is not avaliable
+ *
+ *  @param eventTitle      Event name
+ *  @param eventParameters Optional parameters for the event. Can be nill.
+ */
+- (void)addEvent:(NSString *)eventTitle withParameters:(NSDictionary *)eventParameters;
+```
+The recommended way to get access to this functional is to use sharedLogger method of the ROKOLogger class. Sample:
+```Objective-C
+[[ROKOLogger sharedLogger]addEvent:@"_ROKO.Stickers.Open" withParameters:nil];
+```
+The example above sends event with name "_ROKO.Stickers.Open" without additional parameters.
+To optimize traffic events are packs in batches. Events are sending when the size of current batch is growed up to 50 items or 5 seconds elapsed since the last sending. Also batch contains basic information about device: model, operating system etc.
