@@ -687,4 +687,5 @@ The recommended way to get access to this functional is to use sharedLogger meth
 [[ROKOLogger sharedLogger]addEvent:@"_ROKO.Stickers.Open" withParameters:nil];
 ```
 The example above sends event with name "_ROKO.Stickers.Open" without additional parameters.
+
 To optimize traffic events are packs in batches. Events are sending when the size of current batch is growed up to 50 items or 5 seconds elapsed since the last sending. Also batch contains basic information about device: model, operating system etc.
