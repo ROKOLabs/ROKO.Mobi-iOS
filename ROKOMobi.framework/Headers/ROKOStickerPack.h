@@ -9,6 +9,9 @@
 #import "ROKODataObject.h"
 #import "ROKOStickersWatermarkInfo.h"
 
+
+/// @name ROKOStickers
+
 @interface ROKOStickerPack : ROKODataObject
 
 @property (nonatomic, strong) ROKOImageDataObject *selectedIcon;

@@ -32,7 +32,7 @@ typedef void (^CustomizerCompletionBlock)(ROKOComponentScheme *scheme, NSError *
 
 @property (nonatomic, strong, readonly) ROKOImageCache *cache;
 
- /**
+/**
  *  Loads scheme from specified URL
  *
  *  @param urlPath         URL path to scheme
@@ -43,14 +43,14 @@ typedef void (^CustomizerCompletionBlock)(ROKOComponentScheme *scheme, NSError *
 /**
  *  Saves scheme to local file
  *
- *  @param scheme 		Scheme to be saved
+ *  @param scheme       Scheme to be saved
  *  @param schemeName	Name of the scheme
  *
  *  @return YES if the scheme is written successfully, otherwise NO.
  */
 - (BOOL)saveScheme:(ROKOComponentScheme *)scheme withName:(NSString *)schemeName;
 
- /**
+/**
  *  Loads saved scheme from local storage
  *
  *  @param schemeName Name of the scheme to be loaded
@@ -66,7 +66,7 @@ typedef void (^CustomizerCompletionBlock)(ROKOComponentScheme *scheme, NSError *
  *
  *  @return Loadede scheme or nil
  */
-- (ROKOComponentScheme *)savedSchemeWithURL:(NSURL*)schemeURL;
+- (ROKOComponentScheme *)savedSchemeWithURL:(NSURL *)schemeURL;
 
 /**
  *  Loads image for given data object

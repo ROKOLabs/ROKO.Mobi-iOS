@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 ROKOLabs. All rights reserved.
 //
 
+/// @name ROKOStickers
+
 #import <UIKit/UIKit.h>
 
 @class RLPhotoComposerController;

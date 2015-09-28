@@ -8,6 +8,8 @@
 
 #import "ROKOImageDataObject.h"
 
+/// @name ROKOStickers
+
 /**
  *  Represents Sticekr object
  */

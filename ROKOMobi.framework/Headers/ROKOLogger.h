@@ -13,7 +13,7 @@
 
 @property (nonatomic, assign) NSInteger userId;
 
-+ (ROKOLogger*)sharedLogger;
++ (ROKOLogger *)sharedLogger;
 
 /**
  *  Sends analytic event to ROKO Analytics. Stores message in local db if server is not avaliable

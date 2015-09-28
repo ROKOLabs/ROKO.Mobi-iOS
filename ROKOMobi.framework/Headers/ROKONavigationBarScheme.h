@@ -14,9 +14,11 @@
 @property (nonatomic, assign) BOOL useTextButtons;
 @property (nonatomic, copy) NSString *navigationLeftButtonText;
 @property (nonatomic, copy) NSString *navigationRightButtonText;
+@property (nonatomic, copy) NSString *navigationDoneButtonText;
 @property (nonatomic, strong) ROKOFontDataObject *navigationButtonsFont;
 @property (nonatomic, strong) ROKOImageDataObject *navigationLeftButtonImageFile;
 @property (nonatomic, strong) ROKOImageDataObject *navigationRightButtonImageFile;
+@property (nonatomic, strong) ROKOImageDataObject *navigationDoneButtonImageFile;
 @property (nonatomic, strong) ROKOFontDataObject *controllerTitleFont;
 @property (nonatomic, strong) UIColor *navigationBarColor;
 

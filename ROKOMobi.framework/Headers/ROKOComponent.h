@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "ROKOComponentManager.h"
 
+/// @name Base components
+
 /**
  *  Base class for all components
  */
@@ -25,7 +27,14 @@
  */
 - (id)initWithManager:(ROKOComponentManager *)manager;
 
+/**
+ *  @return Path to Server API from component's manager baseURL property
+ */
 - (NSString *)baseURL;
+
+/**
+ *  @return Token from component's manager baseURL property
+ */
 - (NSString *)apiToken;
 
 @end
