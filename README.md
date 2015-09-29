@@ -11,12 +11,14 @@
 |[Roko Share][share]|
 |[Roko Push][push]|
 |[Roko Analytics][analytics]|
+|[Roko Promo][promo]|
 
 [demoapps]: #get-our-demo-apps
 [stickers]: #rokostickers-usage-guide
 [share]: #rokoshare-usage-guide
 [push]: #rokopush-usage-guide
 [analytics]: #rokoanalytics-usage-guide
+[promo]: #rokopromo-usage-guide
 
 ##Get our Demo Apps 
 
@@ -689,3 +691,34 @@ The recommended way to get access to this functional is to use sharedLogger meth
 The example above sends event with name "_ROKO.Stickers.Open" without additional parameters.
 
 To optimize traffic events are packed in batches. Batches are sending when the size of the current batch is growed up to 50 events or 5 seconds elapsed since the last sending. Also every batch contains basic information about device: model, operating system etc.
+
+## ROKOPromo usage guide
+
+ROKO Promo is a ROKO Mobi product that allows marketers to generate promotional codes for the application, allowing the user to receive discounts (monetary, percentage, or otherwise) on their in-app purchases. Mobile part of this service is implemented as a component named ROKOPromo. It provides access to 2 types of ROKO Promo services:
+
+### Promo discounts.
+This type of discounts is based on promo codes. Application can download list of all discounts avaliable by given promo code. Use the following method for this:
+
+```Objective-C
+- (void)loadPromoDiscountsWithPromoCode:(NSString *)discountId completionBlock:(ROKOPromoItemsListCompletionBlock)completionBlock;
+```
+### Refferal discounts.
+These are discounts for the current user personally. Application can load the list of discounts or get detailed information about the concrete discount. Use the following methods to get this information:
+
+```Objective-C
+- (void)loadRefferalDiscountsList:(ROKOPromoItemsListCompletionBlock)completionBlock;
+- (void)loadRefferalDiscountsWithId:(NSNumber *)discountId completionBlock:(ROKORefferalDiscountCompletionBlock)completionBlock;
+```
+
+Additionally every discount item or promo code may be marked as used by the current user:
+
+```Objective-C
+- (void)markRerrefalDiscountAsUsed:(NSNumber *)discountId completionBlock:(ROKOMarkDiscountCompletionBlock)completionBlock;
+- (void)markPromoCodeAsUsed:(NSString *)discountId completionBlock:(ROKOMarkDiscountCompletionBlock)completionBlock;
+```
+### Promo categories
+Discounts are split into groups named categories. Application can load the list of categories using method below:
+
+```Objective-C
+- (void)loadPromoCategories:(ROKOPromoItemsListCompletionBlock)completionBlock;
+```
