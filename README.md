@@ -278,7 +278,7 @@ Start with creation two strings on yout .plist.
 
 |Key|Value|
 ---|---
-|ROKOMobiAPIURL|rmsws.stage.rokolabs.com/external/v1|
+|ROKOMobiAPIURL|api.roko.mobi/v1|
 |ROKOMobiAPIToken|<a href="https://portal.roko.mobi/settings" target="_blank">%YOUR_API_FROM_SERVER%</a>|
 
 Declare and initialize instance variable dataSource :
