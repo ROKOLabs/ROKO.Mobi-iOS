@@ -22,6 +22,6 @@ typedef NS_ENUM (NSInteger, RLComposerWorkflowType) {
 
 @property (strong, nonatomic) RLPhotoComposerController *composer;
 
-+ (instancetype)buildComposerWorkflowWithType:(RLComposerWorkflowType)type useROKOCMS:(BOOL)useROKOCMS;
++ (instancetype)buildComposerWorkflowWithType:(RLComposerWorkflowType)type;
 
 @end

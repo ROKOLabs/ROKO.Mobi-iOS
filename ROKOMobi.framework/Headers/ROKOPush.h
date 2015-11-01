@@ -10,12 +10,6 @@
 #import "ROKOHTTPClient.h"
 
 /**
- *  Notification that is posted when app page notification is received. User info dictionary contains the only value - id of the page to be shown. The parameter's key is kROKOPushPageIndexKey
- */
-extern NSString *const kROKOPushPageNotification;
-extern NSString *const kROKOPushPageIndexKey;
-
-/**
  *  Manages push notifications
  */
 @interface ROKOPush : ROKOComponent
@@ -50,5 +44,7 @@ extern NSString *const kROKOPushPageIndexKey;
 - (void)removeRegistrationWithcompletion:(ROKOHTTPClientCompletion)completion;
 
 - (void)showOverlayWithId:(NSInteger)overlayId;
+
+- (void)showPromoCampaignWithId:(NSInteger)campaignId;
 
 @end

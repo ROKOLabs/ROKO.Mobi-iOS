@@ -13,6 +13,9 @@
 @class ROKOUserObject;
 @class ROKOPortalManager;
 
+typedef void(^ROKOPortalRequestCompletionBlock)(NSError * __nullable error);
+typedef void(^ROKOPortalRequestApplicationsCompletionBlock)(NSArray * __nullable applications, NSError * __nullable error);
+
 @protocol ROKOPortalManagerDelegate
 @optional
 - (void)portalManagerDidLogin:(nonnull ROKOPortalManager *)manager;
@@ -42,8 +45,9 @@
 @property (nullable, nonatomic, strong) NSString *sessionKey;
 @property (nullable, nonatomic, strong) ROKOUserObject *userInfo;
 
-- (void)loginWithUser:(nonnull NSString *)name andPassword:(nonnull NSString *)password;
-- (void)logout;
-- (void)getApplicationsUsingEmail:(nonnull NSString *)email;
-- (void)signupUser:(nonnull NSString *)name andPassword:(nonnull NSString *)password;
+- (void)loginWithUser:(nonnull NSString *)name andPassword:(nonnull NSString *)password completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)logoutWithCompletionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)getApplicationsUsingEmail:(nonnull NSString *)email completionBlock:(nullable ROKOPortalRequestApplicationsCompletionBlock)completionBlock;
+- (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+
 @end

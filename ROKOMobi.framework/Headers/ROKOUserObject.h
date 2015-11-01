@@ -14,15 +14,16 @@
  */
 @interface ROKOUserObject : ROKODataObject
 
-@property (nonatomic, strong) NSString *createDate;
+@property (nonatomic, copy) NSString *createDate;
 @property (nonatomic, strong) ROKODataObject *developmentCompany;
-@property (nonatomic, strong) NSString *email;
-@property (nonatomic, strong) NSString *firstLoginTime;
-@property (nonatomic, strong) NSString *lastLoginTime;
-@property (nonatomic, strong) NSString *phone;
-@property (nonatomic, strong) NSString *photoFile;
+@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *firstLoginTime;
+@property (nonatomic, copy) NSString *lastLoginTime;
+@property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy) NSString *photoFile;
+@property (nonatomic, copy) NSString *referralCode;
 @property (nonatomic, strong) NSDictionary *systemProperties;
-@property (nonatomic, strong) NSString *updateDate;
-@property (nonatomic, strong) NSString *username;
+@property (nonatomic, copy) NSString *updateDate;
+@property (nonatomic, copy) NSString *username;
 
 @end

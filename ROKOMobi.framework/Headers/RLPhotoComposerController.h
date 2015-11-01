@@ -27,14 +27,13 @@ typedef NS_ENUM (NSInteger, RLPackButtonMode) {
 @property (nonatomic, strong) NSUUID *photoId;
 
 @property (strong, nonatomic) UIImage *photo;
-
+@property (nonatomic, assign, readonly) BOOL savePhotosToCameraRoll;
 
 @property (nonatomic, strong) ROKOComponentScheme *scheme;
 
 // customizable properties
 @property (copy, nonatomic) NSString *photoAlbumName;
 @property (assign, nonatomic) BOOL displayStickerPacksTitles;
-@property (assign, nonatomic) BOOL savePhotosToCameraRoll;
 @property (assign, nonatomic) BOOL enablePhotoSharing;
 @property (nonatomic, strong) UIColor *packsBarColor;
 @property (nonatomic, strong) UIColor *iconsBarColor;

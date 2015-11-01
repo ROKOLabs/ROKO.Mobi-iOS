@@ -22,7 +22,11 @@ typedef enum {
 	ROKO_SC_UNIDENTIFIED_ERROR = 10
 } ROKOStatusCode;
 
+extern NSString *const kROKOPushPageNotification;
+extern NSString *const kROKOPushPageIndexKey;
+
 @class ROKOHTTPClient;
+@class ROKOPortalManager;
 
 typedef void (^ROKOComponentManagerCompletion)(ROKOStatusCode statusCode, NSError *error);
 
@@ -51,6 +55,8 @@ typedef void (^ROKOComponentManagerCompletion)(ROKOStatusCode statusCode, NSErro
  */
 + (instancetype)sharedManager;
 
++ (NSBundle *)frameworkBundle;
+
 /**
  *  Initializes a new instance of component manager.
  *
@@ -64,6 +70,11 @@ typedef void (^ROKOComponentManagerCompletion)(ROKOStatusCode statusCode, NSErro
  *  @return HTTP client associated with current manager
  */
 - (ROKOHTTPClient *)baseHTTPClient;
+
+/**
+ *  @return Portal manager associated with current manager
+ */
+- (ROKOPortalManager *)portalManager;
 
 /**
  *  Registers an object to be accessed by name
@@ -97,5 +108,12 @@ typedef void (^ROKOComponentManagerCompletion)(ROKOStatusCode statusCode, NSErro
 - (void)unregisterObjectWithName:(NSString *)objectName;
 
 - (void)checkApiTokenWithCompletion:(ROKOComponentManagerCompletion)completion;
+
+/**
+ *  Notify developer to open page
+ *
+ *  @param linkTarget Describes page
+ */
+- (void)notififyDeveloperToOpenPage:(NSString*)linkTarget;
 
 @end
