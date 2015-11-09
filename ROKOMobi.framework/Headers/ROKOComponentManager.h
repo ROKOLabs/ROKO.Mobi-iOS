@@ -8,19 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
-	ROKO_SC_SUCCESS = 0,
-	ROKO_SC_AUTHENTICATION_FAILED = 1,
-	ROKO_SC_ACCESS_DENIED = 2,
-	ROKO_SC_OBJECT_NOT_FOUND = 3,
-	ROKO_SC_BAD_REQUEST = 4,
-	ROKO_SC_OBJECT_ALREADY_EXISTS = 5,
-	ROKO_SC_BAD_PARAMETER_VALUE = 6,
-	ROKO_SC_API_KEY_MISSED = 7,
-	ROKO_SC_API_KEY_INVALID = 8,
-	ROKO_SC_PUSH_NOTIFICATION_SCHEDULE_INVALID = 9,
-	ROKO_SC_UNIDENTIFIED_ERROR = 10
-} ROKOStatusCode;
+typedef NS_ENUM (NSInteger, ROKOStatusCode) {
+	ROKOStatusCodeSuccess = 0,
+	ROKOStatusCodeAuthenticationFailed = 1,
+	ROKOStatusCodeAccessDenied = 2,
+	ROKOStatusCodeObjectNotFound = 3,
+	ROKOStatusCodeBadRequest = 4,
+	ROKOStatusCodeObjectAlreadyExists = 5,
+	ROKOStatusCodeBadParameterValue = 6,
+	ROKOStatusCodeAPIKeyMissed = 7,
+	ROKOStatusCodeAPIKeyInvalid = 8,
+	ROKOStatusCodePushNotificationScheduleInvalid = 9,
+	ROKOStatusCodeUnknownError = 10
+};
 
 extern NSString *const kROKOPushPageNotification;
 extern NSString *const kROKOPushPageIndexKey;

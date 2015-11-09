@@ -9,27 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "ROKOComponent.h"
 
-
 @class ROKOUserObject;
 @class ROKOPortalManager;
+@class ROKOPortalInfo;
 
 typedef void(^ROKOPortalRequestCompletionBlock)(NSError * __nullable error);
 typedef void(^ROKOPortalRequestApplicationsCompletionBlock)(NSArray * __nullable applications, NSError * __nullable error);
-
-@protocol ROKOPortalManagerDelegate
-@optional
-- (void)portalManagerDidLogin:(nonnull ROKOPortalManager *)manager;
-- (void)portalManagerDidLogout:(nonnull ROKOPortalManager *)manager;
-- (void)portalManagerDidSignup:(nonnull ROKOPortalManager *)manager;
-- (void)portalManagerDidReceive:(nonnull ROKOPortalManager *)manager allowedApplications:(nullable NSArray *)apps;
-
-- (void)portalManager:(nonnull ROKOPortalManager *)manager didFailLoginWithError:(nonnull NSError *)error;
-- (void)portalManager:(nonnull ROKOPortalManager *)manager didFailLogoutWithError:(nonnull NSError *)error;
-- (void)portalManager:(nonnull ROKOPortalManager *)manager didFailSignupWithError:(nonnull NSError *)error;
-- (void)portalManager:(nonnull ROKOPortalManager *)manager didFailReceiveAllowedApps:(nonnull NSError *)error;
-@end
+typedef void(^ROKOPortalInfoRequestCompletionBlock)(ROKOPortalInfo * __nullable info, NSError *__nullable error);
 
 #import "ROKOUserObject.h"
+#import "ROKOPortalInfo.h"
 
 /**
  *  Provides API for login/logout/signup to ROKO Portal. Uses ROKOHTTPClient.
@@ -37,17 +26,53 @@ typedef void(^ROKOPortalRequestApplicationsCompletionBlock)(NSArray * __nullable
 @interface ROKOPortalManager : ROKOComponent
 
 /**
- *  Delegate which accept ROKOPortalManagerDelegate protocol
+ *  Checks if user is logged in
  */
-@property (nullable, weak, nonatomic) id <ROKOPortalManagerDelegate> delegate;
-
 @property (nonatomic, readonly) BOOL isLogin;
+
+/**
+ *  Session key
+ */
 @property (nullable, nonatomic, strong) NSString *sessionKey;
+
+/**
+ *  Information about user. Contains nil if user is not logged in
+ */
 @property (nullable, nonatomic, strong) ROKOUserObject *userInfo;
 
+/**
+ *  Attempts to login with specified credentials
+ *
+ *  @param name            user name
+ *  @param password        user password
+ *  @param completionBlock Completion block. Called both for successfull and error result.
+ */
 - (void)loginWithUser:(nonnull NSString *)name andPassword:(nonnull NSString *)password completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+
+/**
+ *  Logs out from portal
+ *
+ *  @param completionBlock Calles on response received
+ */
 - (void)logoutWithCompletionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 - (void)getApplicationsUsingEmail:(nonnull NSString *)email completionBlock:(nullable ROKOPortalRequestApplicationsCompletionBlock)completionBlock;
+
+/**
+ *  Registers new portal user
+ *
+ *  @param name            User name
+ *  @param email           User e-mail address
+ *  @param password        User password
+ *  @param ambassadorCode  Promo code of another user. See Promo descreption
+ *  @param completionBlock Completion block. Called when server response is received
+ */
 - (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+
+/**
+ *  Loads information about portal application
+ *
+ *  @param completionBlock Completion block. Called when server response is received
+ */
+- (void)getPortalInfoWithCompletionBlock:(nonnull ROKOPortalInfoRequestCompletionBlock)completionBlock;
 
 @end

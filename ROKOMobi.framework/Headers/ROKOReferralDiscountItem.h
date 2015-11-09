@@ -8,9 +8,19 @@
 
 #import "ROKODiscountItem.h"
 
+/**
+ *  Referral discount object
+ */
 @interface ROKOReferralDiscountItem : ROKODiscountItem
 
+/**
+ *  Discount creation date
+ */
 @property (nonatomic, strong) NSDate *createDate;
+
+/**
+ *  Last update date
+ */
 @property (nonatomic, strong) NSDate *updateDate;
 
 @end

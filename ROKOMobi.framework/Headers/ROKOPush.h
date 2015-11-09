@@ -18,7 +18,7 @@
  *  Registers device token on ROKO Portal
  *
  *  @param apnToken Token from application:didRegisterForRemoteNotificationsWithDeviceToken: method of UIApplicationDelegate object
- *  @param completion Block to be call when responce is received (or error occured)
+ *  @param completion Block to be call when response is received (or error occurred)
  */
 - (void)registerWithAPNToken:(NSData *)apnToken withCompletion:(ROKOHTTPClientCompletion)completion;
 
@@ -32,16 +32,16 @@
 /**
  *  Check ROKO-Portal status for push notification registration
  *
- *  @param completion Block to be call when responce is received (or error occured)
+ *  @param completion Block to be call when response is received (or error occurred)
  */
-- (void)checkRegistrationWithcompletion:(ROKOHTTPClientCompletion)completion;
+- (void)checkRegistrationWithCompletion:(ROKOHTTPClientCompletion)completion;
 
 /**
  *  Remove ROKO-Portal registration for push notification
  *
- *  @param completion Block to be call when responce is received (or error occured)
+ *  @param completion Block to be call when response is received (or error occurred)
  */
-- (void)removeRegistrationWithcompletion:(ROKOHTTPClientCompletion)completion;
+- (void)removeRegistrationWithCompletion:(ROKOHTTPClientCompletion)completion;
 
 - (void)showOverlayWithId:(NSInteger)overlayId;
 

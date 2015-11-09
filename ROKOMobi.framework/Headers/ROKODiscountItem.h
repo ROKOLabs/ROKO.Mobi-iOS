@@ -9,17 +9,47 @@
 #import <Foundation/Foundation.h>
 #import "ROKODataObject.h"
 
+/**
+ *  Discount types
+ */
 typedef NS_ENUM(NSInteger, ROKODiscountType) {
+	/**
+	 *  Unknown discount type.
+	 */
 	ROKODiscountTypeUnspecified,
+	/**
+	 *  Percent discount
+	 */
 	ROKODiscountTypePercent,
+	/**
+	 *  The discount value is fixed
+	 */
 	ROKODiscountTypeFixed,
+	/**
+	 *  The goods are absolutely free
+	 */
 	ROKODiscountTypeFree
 };
 
+/**
+ *  Base class for discount data objects
+ */
 @interface ROKODiscountItem : ROKODataObject
 
+/**
+ *  Value of discount
+ * @see type
+ */
 @property (nonatomic, strong) NSNumber *value;
+
+/**
+ *  Type of discount
+ */
 @property (nonatomic, assign) ROKODiscountType type;
+
+/**
+ *  Indicates whether the discount can be used
+ */
 @property (nonatomic, assign) BOOL canBeUsed;
 
 @end
