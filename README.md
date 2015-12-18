@@ -32,7 +32,7 @@ The ROKOStickers framework provides a means for taking photos, dressing them up 
 
 1) ROKOStickers framework requires iOS 8.0 or later.
 
-2) Install Xcode 6.0 or later.
+2) Install Xcode 7.0 or later.
 
 ###Configure your Xcode Project
 
@@ -51,27 +51,15 @@ in your project directory
 
 #### Manual
 
-1) Drag and drop Framework files:
+1) Create a /Frameworks directory at the project root that will contain the custom Frameworks that you want to add.
 
-```
-ROKOMobi.framework
-```
+2) Put the ROKOMobi Framework artifacts in this directory. (Be sure to add both the Debug and Release bins at the directory level. This is just like in step #4 of the previous section
 
-into your Xcode project (select "Create groups for any added folders" if needed). These packages contain the static libraries, header files, and necessary resources (configuration files and images).
+3) In the“Runpath Search Paths” and “Framework Search Paths” of your project target and test target add “$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)”
 
----
+4) Navigate to the General section of your project Target and add the ROKOMobi Frameworks to the “Embedded Binaries” section. Add the binaries that are found in Release! The ones in Debug will not pass validation with Apple. This should automatically add the Frameworks to the “Linked Frameworks and Libraries” below.
 
-2) Check the following frameworks within the "Link Binary With Libraries" build phase of your project’s target: 
-
-```
-ROKOMobi.framework 
-UIKit.framework 
-Foundation.framework
-```
-
----
-
-3) Include the following line to make the Framework available to your code:
+5) Include the following line to make the Framework available to your code:
 
 ```
 #import <ROKOMobi/ROKOMobi.h>
