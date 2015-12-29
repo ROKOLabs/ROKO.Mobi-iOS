@@ -12,6 +12,7 @@
 |[Roko Push][push]|
 |[Roko Analytics][analytics]|
 |[Roko Promo][promo]|
+|[Roko Referral][referral]|
 
 [demoapps]: #get-our-demo-apps
 [stickers]: #rokostickers-usage-guide
@@ -19,6 +20,7 @@
 [push]: #rokopush-usage-guide
 [analytics]: #rokoanalytics-usage-guide
 [promo]: #rokopromo-usage-guide
+[referral]: #rokoreferral-usage-guide
 
 ##Get our Demo Apps 
 
@@ -683,7 +685,7 @@ To optimize traffic events are packed in batches. Batches are sending when the s
 
 ## ROKOPromo usage guide
 
-ROKO Promo is a ROKO Mobi product that allows marketers to generate promotional codes for the application, allowing the user to receive discounts (monetary, percentage, or otherwise) on their in-app purchases. Mobile part of this service is implemented as a component named ROKOPromo. It provides access to 2 types of ROKO Promo services:
+ROKO Promo is a ROKO Mobi product that allows marketers to generate promotional codes for the application, allowing the user to receive discounts (monetary, percentage, or otherwise) on their in-app purchases. Mobile part of this service is implemented as a component named ROKOPromo.
 
 ### Promo discounts.
 This type of discounts is based on promo codes. Application can download list of all discounts avaliable by given promo code. Use the following method for this:
@@ -691,23 +693,12 @@ This type of discounts is based on promo codes. Application can download list of
 ```Objective-C
 - (void)loadPromoDiscountsWithPromoCode:(NSString *)discountId completionBlock:(ROKOPromoItemsListCompletionBlock)completionBlock;
 ```
-### Refferal discounts.
-These are discounts for the current user personally. Application can load the list of discounts or get detailed information about the concrete discount. Use the following methods to get this information:
-
-```Objective-C
-- (void)loadRefferalDiscountsList:(ROKOPromoItemsListCompletionBlock)completionBlock;
-- (void)loadRefferalDiscountsWithId:(NSNumber *)discountId completionBlock:(ROKORefferalDiscountCompletionBlock)completionBlock;
-```
 
 Additionally every discount item or promo code may be marked as used by the current user:
 
 ```Objective-C
-- (void)markRerrefalDiscountAsUsed:(NSNumber *)discountId completionBlock:(ROKOMarkDiscountCompletionBlock)completionBlock;
-- (void)markPromoCodeAsUsed:(NSString *)discountId completionBlock:(ROKOMarkDiscountCompletionBlock)completionBlock;
+- (void)markPromoCodeAsUsed:(NSNumber *)promoCode completionBlock:(ROKOMarkDiscountCompletionBlock)completionBlock;
 ```
-### Promo categories
-Discounts are split into groups named categories. Application can load the list of categories using method below:
 
-```Objective-C
-- (void)loadPromoCategories:(ROKOPromoItemsListCompletionBlock)completionBlock;
-```
+## ROKOReferral usage guide
+ROKOReferral is a component for referral discounts manipulating. Using this component you can get list of Referral discounts available for the current user, activate and complete them.
