@@ -606,12 +606,14 @@ twitterChannel.enabled = YES;
 twitterChannel.bodyText = @"shared in twitter";
 ROKOImageDataObject* twitterImage = [[ROKOImageDataObject alloc]init];
 twitterImage.image = [UIImage imageNamed:@"twitter"];
+twitterChannel.imageFileGroup = twitterImage; 
 ROKOShareChannelScheme * facebookChannel = [[ROKOShareChannelScheme alloc]init];
-twitterChannel.type = kRSActivityTypeFacebook;
-twitterChannel.enabled = YES;
-twitterChannel.bodyText = @"shared in facebook";
+facebookChannel.type = kRSActivityTypeFacebook;
+facebookChannel.enabled = YES;
+facebookChannel.bodyText = @"shared in facebook";
 ROKOImageDataObject* facebookImage = [[ROKOImageDataObject alloc]init];
 facebookImage.image = [UIImage imageNamed:@"facebook"];
+facebookChannel.imageFileGroup = facebookImage; 
 scheme.channels = @[twitterChannel,facebookChannel];
 ```
 ## ROKOPush Usage guide
