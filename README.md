@@ -704,3 +704,20 @@ Additionally every discount item or promo code may be marked as used by the curr
 
 ## ROKOReferral usage guide
 ROKOReferral is a component for referral discounts manipulating. Using this component you can get list of Referral discounts available for the current user, activate and complete them.
+
+```Objective-C
+// Loads all referral discounts are avaliable for current user
+- (void)loadReferralDiscountsList:(nullable ROKOItemsListCompletionBlock)completionBlock;
+
+//  Marks referral discount object as used.
+- (void)markReferralDiscountAsUsed:(nonnull NSNumber *)discountId completionBlock:(nullable ROKOMarkDiscountCompletionBlock)completionBlock;
+
+//  Loads referral campaing info
+- (void)loadDiscountInfoWithCode:(nonnull NSString *)code completionBlock:(nullable ROKOReferralDiscountInfoResponseBlock)completionBlock;
+
+//  Activates discount by the given referral code
+- (void)activateDiscountWithCode:(nonnull NSString *)code completionBlock:(nullable ROKOReferralActivateDiscountResponseBlock)completionBlock;
+
+//  Completes discount with given referral code
+- (void)completeDiscountWithCode:(nonnull NSString *)code completionBlock:(nullable ROKOReferralCompleteDiscountResponseBlock)completionBlock;
+```
