@@ -30,12 +30,34 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
 
 @class RSActivityViewController;
 
+/**
+ *  Delegate for RSActivityViewController object
+ */
 @protocol RSActivityViewControllerDelegate <NSObject>
 
 @optional
 
 - (void)activityController:(RSActivityViewController *)controller didFinishWithActivityType:(ROKOShareChannelType)activityType result:(ROKOSharingResult)result;
-- (void)activityControllerDidCancel:(RSActivityViewController *)controller;
+
+/**
+ *  Calls before applying the share scheme. Delegate can use this method to change the cheme on the fly.
+ *
+ *  @param controller Controller that will use the scheme
+ *  @param scheme     Scheme to be applied
+ */
+- (void)activityController:(RSActivityViewController *)controller willApplyScheme:(ROKOShareScheme *)scheme;
+
+/**
+ *  Calls before show show final message composer. Delegate may implement this method, for example, to set recipient list.
+ *
+ *  @param controller      Active sharing controller
+ *  @param messageComposer Message composer. Type of this composer depends on channel type:
+ * 		MFMailComposeViewController for ROKOShareChannelTypeEmail
+ * 		MFMessageComposeViewController for ROKOShareChannelTypeMessage
+ * 		SLComposeViewController for ROKOShareChannelTypeFacebook and ROKOShareChannelTypeTwitter
+ *  @param channelType     Current sharing channel
+ */
+- (void)activityController:(RSActivityViewController *)controller willShowSharingMessageComposer:(id)messageComposer forShareChannelType:(ROKOShareChannelType)channelType;
 
 @end
 

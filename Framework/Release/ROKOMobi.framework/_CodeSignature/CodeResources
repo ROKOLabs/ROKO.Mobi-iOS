@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ubbdyzPz1pvEQapJL2xiifjX/TQ=
+		EgrmUMTtt5L13k8iAP0IKq9UGoQ=
 		</data>
 		<key>Headers/RLComposerWorkflowController.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/ROKOComponentManager.h</key>
 		<data>
-		W529tDOHAwkN3GQujBs5rWo6H0M=
+		sQ9/tsNhhL+MH7CGs/r3nCDAAwE=
 		</data>
 		<key>Headers/ROKOComponentScheme.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/ROKOReferral.h</key>
 		<data>
-		ti5KBnEoNC1QugrlSCF1GbkTrSg=
+		aValXEXn3z4cfnxPphhuBIUoCfA=
 		</data>
 		<key>Headers/ROKOReferralCampaignInfo.h</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Headers/ROKOShareChannelScheme.h</key>
 		<data>
-		HIYqVE6uRAicYwYTxhsaV7KwXFk=
+		bNkZKk4qra8B4qB04yfNR+AXsnE=
 		</data>
 		<key>Headers/ROKOShareCustomizer.h</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>Headers/RSActivityViewController.h</key>
 		<data>
-		GiGJcTu9AZhmzNsHwxKYjQ42ngs=
+		KO8x36uGwSWnkR8UfNdbXswTUiE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CTndLNQyNvf0oTQ5TfnH5sOAuMU=
+		D1cwd2nEr5CaERt5aX26Oj3mH/Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -206,83 +206,83 @@
 		</data>
 		<key>Overlay.storyboardc/UIViewController-tVx-W5-AAd.nib</key>
 		<data>
-		C/WnwbcMdi3lwUTvsMvKOwQ9BaQ=
+		27h16GlOTPnV++fj64VY5Hd0oNM=
 		</data>
 		<key>Overlay.storyboardc/tVx-W5-AAd-view-WPp-64-WfR.nib</key>
 		<data>
-		t49BVDUc7mJ7CjdQ+Iy3cIy4/0g=
+		uq/ut7XglHgsEM9INqTpjdSe23I=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/4nf-em-Q5P-view-Ym9-j0-GdZ.nib</key>
 		<data>
-		gI1ezIPOzJ8oKaSPDlxXKaI5nC4=
+		LDwDSFrzJtqD+InDSVYtM0j41M0=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/8IJ-oJ-gag-view-QAZ-EC-XSv.nib</key>
 		<data>
-		wOEDFqcTXAc/QQePu1x0+DeelBU=
+		48nRdrPhnaMoINXRoYJzLn6EfqI=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/Info.plist</key>
 		<data>
-		PWHkARHO8Kc+UbeD/kg1i21lv4w=
+		FtMFGiyJ9IR5ZY1f1X+2j4+1tAI=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/LhR-PF-tNH-view-GsU-5Y-o6O.nib</key>
 		<data>
-		zCIHpopJgUBB8708yQXf2ikuGqQ=
+		q0r1hbK3WnxPgXQByxa89TzpGwE=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/Mzi-2M-rkh-view-vEu-4N-SQu.nib</key>
 		<data>
-		5N/aFe1iwCdCGO9HNFHvrJOPazo=
+		rv8nVSJfsxS9G0nqXOuvQ7c2U10=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/c80-h3-YFC-view-rQH-c1-hfB.nib</key>
 		<data>
-		hAx92T9r2Oz8KK3eft4YiN3A17M=
+		Srxy86hvsd4ebe/J9Pu/lXMdl0k=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/cameraController.nib</key>
 		<data>
-		kXH4VtvsW2A3Ob4trvvWmF4Uu0U=
+		xDwiom7dt9CUXK3+Eth7eX41hxA=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/imageCaptureController.nib</key>
 		<data>
-		rnCBXUHnKqmudfeDRXgFf49y3JQ=
+		A/DxLvY91hNEf+wSryZJg6BNsns=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/nRk-CL-MQl-view-gzh-eN-DQn.nib</key>
 		<data>
-		PlJKslwQB194XhckiFcywcWXaU8=
+		y90Pj93i/mangqq9V0XvabbuA8Y=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/photoPreviewController.nib</key>
 		<data>
-		88WeLpoi7J+VfWOPjrK8bEFUk78=
+		evY8kZLpCu5nD+h5jCq/4Fu1wUA=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/shareController.nib</key>
 		<data>
-		L5T6n+Xe5HTv0grU86egy08kDfc=
+		XDB/4I1rmPs/M5xNKFey2E/b3L4=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/stickersController.nib</key>
 		<data>
-		fyqnRljTmq3vHrDWLzmfiIrVhIM=
+		EYAaoOt1GDvNuBUXDofCuLJbGBI=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/unlockController.nib</key>
 		<data>
-		xNKTBjqiXwoBvshVAAxzBPrpju8=
+		krTvxIs8Dtk4XnpLoaCn8aYRWZ4=
 		</data>
 		<key>RLStickerPackIconCell.nib</key>
 		<data>
-		5ljcY77ZCpFzH0NqZXpQWDfpgs8=
+		nOCcbXe4Brt08J72JLlbP0VHW4o=
 		</data>
 		<key>RLStickerPackTitleAndIconCell.nib</key>
 		<data>
-		WKEHQmr2oA2swJU6TM2ykZRtg3s=
+		F81TnoZJe/RgBSEp6fFGViWP2k4=
 		</data>
 		<key>RLStickerPackTitleCell.nib</key>
 		<data>
-		+ygqnQF3gXQ95lIa91nHlNN4wVY=
+		aa+nQQ1VwamP5QbQtpxL8MVhE7s=
 		</data>
 		<key>RLStickersPanel.nib</key>
 		<data>
-		oH9DutL6V1ti5TXvKLTlquuuHB8=
+		S1VmBdtNz2R+nj3soDmja9U/asE=
 		</data>
 		<key>RSActivityViewController.nib</key>
 		<data>
-		GhRs/FFCPVuqptUOG3ZvCOH6NWQ=
+		fxEwWdV66KFFJIbGf73dHb9zA0M=
 		</data>
 		<key>camera@2x.png</key>
 		<data>
@@ -338,7 +338,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ubbdyzPz1pvEQapJL2xiifjX/TQ=
+		EgrmUMTtt5L13k8iAP0IKq9UGoQ=
 		</data>
 		<key>Headers/RLComposerWorkflowController.h</key>
 		<data>
@@ -390,7 +390,7 @@
 		</data>
 		<key>Headers/ROKOComponentManager.h</key>
 		<data>
-		W529tDOHAwkN3GQujBs5rWo6H0M=
+		sQ9/tsNhhL+MH7CGs/r3nCDAAwE=
 		</data>
 		<key>Headers/ROKOComponentScheme.h</key>
 		<data>
@@ -454,7 +454,7 @@
 		</data>
 		<key>Headers/ROKOReferral.h</key>
 		<data>
-		ti5KBnEoNC1QugrlSCF1GbkTrSg=
+		aValXEXn3z4cfnxPphhuBIUoCfA=
 		</data>
 		<key>Headers/ROKOReferralCampaignInfo.h</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>Headers/ROKOShareChannelScheme.h</key>
 		<data>
-		HIYqVE6uRAicYwYTxhsaV7KwXFk=
+		bNkZKk4qra8B4qB04yfNR+AXsnE=
 		</data>
 		<key>Headers/ROKOShareCustomizer.h</key>
 		<data>
@@ -522,7 +522,7 @@
 		</data>
 		<key>Headers/RSActivityViewController.h</key>
 		<data>
-		GiGJcTu9AZhmzNsHwxKYjQ42ngs=
+		KO8x36uGwSWnkR8UfNdbXswTUiE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -534,83 +534,83 @@
 		</data>
 		<key>Overlay.storyboardc/UIViewController-tVx-W5-AAd.nib</key>
 		<data>
-		C/WnwbcMdi3lwUTvsMvKOwQ9BaQ=
+		27h16GlOTPnV++fj64VY5Hd0oNM=
 		</data>
 		<key>Overlay.storyboardc/tVx-W5-AAd-view-WPp-64-WfR.nib</key>
 		<data>
-		t49BVDUc7mJ7CjdQ+Iy3cIy4/0g=
+		uq/ut7XglHgsEM9INqTpjdSe23I=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/4nf-em-Q5P-view-Ym9-j0-GdZ.nib</key>
 		<data>
-		gI1ezIPOzJ8oKaSPDlxXKaI5nC4=
+		LDwDSFrzJtqD+InDSVYtM0j41M0=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/8IJ-oJ-gag-view-QAZ-EC-XSv.nib</key>
 		<data>
-		wOEDFqcTXAc/QQePu1x0+DeelBU=
+		48nRdrPhnaMoINXRoYJzLn6EfqI=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/Info.plist</key>
 		<data>
-		PWHkARHO8Kc+UbeD/kg1i21lv4w=
+		FtMFGiyJ9IR5ZY1f1X+2j4+1tAI=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/LhR-PF-tNH-view-GsU-5Y-o6O.nib</key>
 		<data>
-		zCIHpopJgUBB8708yQXf2ikuGqQ=
+		q0r1hbK3WnxPgXQByxa89TzpGwE=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/Mzi-2M-rkh-view-vEu-4N-SQu.nib</key>
 		<data>
-		5N/aFe1iwCdCGO9HNFHvrJOPazo=
+		rv8nVSJfsxS9G0nqXOuvQ7c2U10=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/c80-h3-YFC-view-rQH-c1-hfB.nib</key>
 		<data>
-		hAx92T9r2Oz8KK3eft4YiN3A17M=
+		Srxy86hvsd4ebe/J9Pu/lXMdl0k=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/cameraController.nib</key>
 		<data>
-		kXH4VtvsW2A3Ob4trvvWmF4Uu0U=
+		xDwiom7dt9CUXK3+Eth7eX41hxA=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/imageCaptureController.nib</key>
 		<data>
-		rnCBXUHnKqmudfeDRXgFf49y3JQ=
+		A/DxLvY91hNEf+wSryZJg6BNsns=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/nRk-CL-MQl-view-gzh-eN-DQn.nib</key>
 		<data>
-		PlJKslwQB194XhckiFcywcWXaU8=
+		y90Pj93i/mangqq9V0XvabbuA8Y=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/photoPreviewController.nib</key>
 		<data>
-		88WeLpoi7J+VfWOPjrK8bEFUk78=
+		evY8kZLpCu5nD+h5jCq/4Fu1wUA=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/shareController.nib</key>
 		<data>
-		L5T6n+Xe5HTv0grU86egy08kDfc=
+		XDB/4I1rmPs/M5xNKFey2E/b3L4=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/stickersController.nib</key>
 		<data>
-		fyqnRljTmq3vHrDWLzmfiIrVhIM=
+		EYAaoOt1GDvNuBUXDofCuLJbGBI=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/unlockController.nib</key>
 		<data>
-		xNKTBjqiXwoBvshVAAxzBPrpju8=
+		krTvxIs8Dtk4XnpLoaCn8aYRWZ4=
 		</data>
 		<key>RLStickerPackIconCell.nib</key>
 		<data>
-		5ljcY77ZCpFzH0NqZXpQWDfpgs8=
+		nOCcbXe4Brt08J72JLlbP0VHW4o=
 		</data>
 		<key>RLStickerPackTitleAndIconCell.nib</key>
 		<data>
-		WKEHQmr2oA2swJU6TM2ykZRtg3s=
+		F81TnoZJe/RgBSEp6fFGViWP2k4=
 		</data>
 		<key>RLStickerPackTitleCell.nib</key>
 		<data>
-		+ygqnQF3gXQ95lIa91nHlNN4wVY=
+		aa+nQQ1VwamP5QbQtpxL8MVhE7s=
 		</data>
 		<key>RLStickersPanel.nib</key>
 		<data>
-		oH9DutL6V1ti5TXvKLTlquuuHB8=
+		S1VmBdtNz2R+nj3soDmja9U/asE=
 		</data>
 		<key>RSActivityViewController.nib</key>
 		<data>
-		GhRs/FFCPVuqptUOG3ZvCOH6NWQ=
+		fxEwWdV66KFFJIbGf73dHb9zA0M=
 		</data>
 		<key>camera@2x.png</key>
 		<data>

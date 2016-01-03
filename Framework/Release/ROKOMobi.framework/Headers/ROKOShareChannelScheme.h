@@ -12,10 +12,15 @@
  *  Possible share channels
  */
 typedef NS_ENUM(NSInteger, ROKOShareChannelType){
+	
+	/**
+	 *  Unspecified channel
+	 */
+	ROKOShareChannelTypeUnknown = 0,
 	/**
 	 *  E-mail share channel
 	 */
-	ROKOShareChannelTypeEmail = 0,
+	ROKOShareChannelTypeEmail,
 	/**
 	 *  Twitter share channel
 	 */

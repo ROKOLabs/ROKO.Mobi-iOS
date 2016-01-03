@@ -10,16 +10,22 @@
 
 typedef NS_ENUM (NSInteger, ROKOStatusCode) {
 	ROKOStatusCodeSuccess = 0,
-	ROKOStatusCodeAuthenticationFailed = 1,
-	ROKOStatusCodeAccessDenied = 2,
-	ROKOStatusCodeObjectNotFound = 3,
-	ROKOStatusCodeBadRequest = 4,
-	ROKOStatusCodeObjectAlreadyExists = 5,
-	ROKOStatusCodeBadParameterValue = 6,
-	ROKOStatusCodeAPIKeyMissed = 7,
-	ROKOStatusCodeAPIKeyInvalid = 8,
-	ROKOStatusCodePushNotificationScheduleInvalid = 9,
-	ROKOStatusCodeUnknownError = 10
+	ROKOStatusCodeAuthenticationFailed,
+	ROKOStatusCodeAccessDenied,
+	ROKOStatusCodeObjectNotFound,
+	ROKOStatusCodeBadRequest,
+	ROKOStatusCodeObjectAlreadyExists,
+	ROKOStatusCodeBadParameterValue,
+	ROKOStatusCodeAPIKeyMissed,
+	ROKOStatusCodeAPIKeyInvalid,
+	ROKOStatusCodePushNotificationScheduleInvalid,
+	ROKOStatusCodeObjectInUse,
+	ROKOStatusCodeDevCompanyAlreadyExists,
+	ROKOStatusCodeUserTypeInvalid,
+	ROKOStatusCodeDeepLinkConfigurationInvalid,
+	ROKOStatusCodeIncentiveProgramIsNotActive,
+	ROKOStatusCodeDiscountIsNotEnabled,
+	ROKOStatusCodeUnknownError
 };
 
 extern NSString *const kROKOPushPageNotification;
