@@ -10,9 +10,10 @@
 #import <Foundation/Foundation.h>
 
 #import "RSActivityViewController.h"
-#import "ROKOShareCustomizer.h"
+
 
 #define SHARE_CHANNEL_EMAIL @"Email"
 #define SHARE_CHANNEL_FACEBOOK @"Facebook"
 #define SHARE_CHANNEL_TWITTER @"Twitter"
 #define SHARE_CHANNEL_SMS @"SMS"
+#define SHARE_CHANNEL_UNKNOWN @"Unknown"

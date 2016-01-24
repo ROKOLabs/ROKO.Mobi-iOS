@@ -24,3 +24,4 @@ FOUNDATION_EXPORT const unsigned char ROKOMobiVersionString[];
 #import <ROKOMobi/ROKOPromo.h>
 #import <ROKOMobi/ROKOReferral.h>
 #import <ROKOMobi/ROKOPortalManager.h>
+#import <ROKOMobi/ROKOLinkManager.h>

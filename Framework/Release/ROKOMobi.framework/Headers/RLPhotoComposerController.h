@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ROKOComponentCustomizer.h"
 #import "RLPhotoComposerDelegate.h"
 #import "RLPhotoComposerDataSource.h"
 #import "RLWatermarkInfo.h"
@@ -16,6 +15,8 @@ typedef NS_ENUM (NSInteger, RLPackButtonMode) {
 	RLPackButtonModeRectangle,
 	RLPackButtonModeEllipse
 };
+
+@class ROKOComponentCustomizer;
 
 @interface RLPhotoComposerController : UIViewController
 

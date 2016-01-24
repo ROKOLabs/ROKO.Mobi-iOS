@@ -25,7 +25,6 @@ FOUNDATION_EXPORT const unsigned char ROKOStickersVersionString[];
 #import "RLWatermarkInfo.h"
 #import "RLComposerWorkflowController.h"
 #import "ROKOStickersScheme.h"
-#import "ROKOStickersCustomizer.h"
 #import "ROKOPortalStickersDataSource.h"
 #import "ROKOSticker.h"
 #import "ROKOStickerPack.h"

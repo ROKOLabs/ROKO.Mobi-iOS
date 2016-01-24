@@ -37,6 +37,13 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
 
 @optional
 
+/**
+ *  Calls when activity controller shared it's content or closed by user
+ *
+ *  @param controller   Closed controller
+ *  @param activityType Sharing channel. Contains ROKOShareChannelTypeUknown if controller was closed
+ *  @param result       Sharing result
+ */
 - (void)activityController:(RSActivityViewController *)controller didFinishWithActivityType:(ROKOShareChannelType)activityType result:(ROKOSharingResult)result;
 
 /**
@@ -117,6 +124,18 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
  */
 @property (strong, nonatomic) NSURL *URL;
 
+/**
+ *  Creates a new instance of RSActivityViewController
+ *
+ *  @return New RSActivityViewController object
+ */
 + (instancetype)buildController;
+
+/**
+ *  Creates a RSActivityViewController object for referral code sharing. Works for registered user only
+ *
+ *  @return New RSActivityViewController object or nil if user is not logged in
+ */
++ (instancetype)buildReferralShareController;
 
 @end
