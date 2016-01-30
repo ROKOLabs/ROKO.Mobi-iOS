@@ -31,3 +31,4 @@ FOUNDATION_EXPORT const unsigned char ROKOStickersVersionString[];
 #import "RLImageCaptureViewController.h"
 #import "RLStickersPanel.h"
 #import "RLStickerPacksPanel.h"
+#import "ROKOStickersCustomizer.h"

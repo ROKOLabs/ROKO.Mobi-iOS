@@ -6,7 +6,7 @@
 //  Copyright © 2016 ROKO Labs. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 #import "ROKOComponent.h"
 #import "ROKOLink.h"
 
@@ -14,8 +14,10 @@
 
 @protocol ROKOLinkManagerDelegate <NSObject>
 
+@optional
+
 - (void)linkManager:(ROKOLinkManager *)manager didOpenDeepLink:(ROKOLink *)link;
-- (void)linkManager:(ROKOLinkManager *)manager didFailToHandleURL:(NSURL *)url;
+- (void)linkManager:(ROKOLinkManager *)manager didFailToOpenDeepLinkWithError:(NSError *)error;
 
 @end
 
@@ -40,7 +42,5 @@
  *  @param userActivity The NSUserActivity that caused the application opening
  */
 - (void)continueUserActivity:(NSUserActivity *)userActivity;
-
-
 
 @end

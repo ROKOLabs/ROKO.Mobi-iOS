@@ -113,6 +113,11 @@ typedef void (^ROKOComponentManagerCompletion)(ROKOStatusCode statusCode, NSErro
  */
 - (void)unregisterObjectWithName:(NSString *)objectName;
 
+/**
+ *  Asks server if the current session is valid
+ *
+ *  @param completion Block to be called when response is received
+ */
 - (void)checkApiTokenWithCompletion:(ROKOComponentManagerCompletion)completion;
 
 /**
