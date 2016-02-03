@@ -54,9 +54,10 @@ typedef void(^ROKOPortalInfoRequestCompletionBlock)(ROKOPortalInfo * __nullable 
  *
  *  @param userName        User name
  *  @param code            Referral code (if necessary)
+ *  @param shareChannel    Use this parameter to specify share channel in case if user signs up via deep link
  *  @param completionBlock Completion block. Called both for successfull and error result.
  */
-- (void)setUserWithName:(nonnull NSString *)userName referralCode:(nullable NSString *)code completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)setUserWithName:(nonnull NSString *)userName referralCode:(nullable NSString *)code linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 /**
  *  Logs out from portal
@@ -73,9 +74,10 @@ typedef void(^ROKOPortalInfoRequestCompletionBlock)(ROKOPortalInfo * __nullable 
  *  @param email           User e-mail address
  *  @param password        User password
  *  @param ambassadorCode  Promo code of another user. See Promo descreption
+ *  @param shareChannel    Use this parameter to specify share channel in case if user signs up via deep link
  *  @param completionBlock Completion block. Called when server response is received
  */
-- (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 /**
  *  Loads information about portal application

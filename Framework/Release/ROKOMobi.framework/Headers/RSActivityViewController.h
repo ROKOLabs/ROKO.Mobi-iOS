@@ -120,9 +120,24 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
 @property (nonatomic, strong) NSData *videoData;
 
 /**
+ *  PDF data to be shared
+ */
+@property (nonatomic, strong) NSData *pdfData;
+
+/**
  *  URL of sharing content
  */
-@property (strong, nonatomic) NSURL *URL;
+@property (strong, nonatomic) NSURL *contentURL;
+
+/**
+ *  Annotation of the sharing text
+ */
+@property (nonatomic, copy) NSString *annotation;
+
+/**
+ *  Text to be shared
+ */
+@property (nonatomic, copy) NSString *text;
 
 /**
  *  Creates a new instance of RSActivityViewController
