@@ -38,9 +38,9 @@ The ROKOStickers framework provides a means for taking photos, dressing them up 
 
 ###Configure your Xcode Project
 
-There are two ways to configure Xcode project: manual and via Cocoapods.
+There are two ways to configure Xcode project: manual and via CocoaPods.
 
-#### Cocoapods
+#### CocoaPods
 Add the following line to your pod file:
 ```
 pod 'ROKO.Mobi.Debug', :configurations => ['Debug']
