@@ -1,3 +1,6 @@
+## Version 0.4.9
+- Specify text for every share channel
+
 ## Version 0.4.8
 - Allows user to share articles
 

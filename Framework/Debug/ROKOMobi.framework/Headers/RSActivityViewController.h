@@ -153,4 +153,12 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
  */
 + (instancetype)buildReferralShareController;
 
+/**
+ *  Sets special text for given share channel only
+ *
+ *  @param text        Text to be shared
+ *  @param channelType Channel type for given text
+ */
+- (void)setText:(NSString *)text forShareChannel:(ROKOShareChannelType)channelType;
+
 @end

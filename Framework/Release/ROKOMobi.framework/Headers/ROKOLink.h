@@ -9,6 +9,31 @@
 #import "ROKODataObject.h"
 
 /**
+ *  Poosible types of link
+ */
+typedef NS_ENUM(NSInteger, ROKOLinkType) {
+	/**
+	 *  Manual-created link
+	 */
+	ROKOLinkTypeManual,
+	
+	/**
+	 *  Link to share promo code
+	 */
+	ROKOLinkTypePromo,
+	
+	/**
+	 *  Referral code link
+	 */
+	ROKOLinkTypeReferral,
+	
+	/**
+	 *  Link for shared content
+	 */
+	ROKOLinkTypeShare
+};
+
+/**
  *  ROKO Deep Link.
  */
 @interface ROKOLink : ROKODataObject
@@ -39,13 +64,18 @@
 @property (nonatomic, copy) NSString *shareChannel;
 
 /**
- *  Link with custom scheme
+ *  Meaningful part of the link url (after domain)
  */
-@property (nonatomic, copy) NSString *customURLSchemeLink;
+@property (nonatomic, copy) NSString *vanityLink;
 
 /**
- *  Meaningful part of the link url (after the domain)
+ *  Link with cusom domain. For example, yourapp://link
  */
-@property (nonatomic, copy) NSString *targetPath;
+@property (nonatomic, copy) NSString *customDomainLink;
+
+/**
+ *  Referral code this link is targeted to
+ */
+@property (nonatomic, copy) NSString *referralCode;
 
 @end
