@@ -1,3 +1,6 @@
+## Version 0.5.0
+- Allows user to share his referral code with friends from contacts
+
 ## Version 0.4.9
 - Specify text for every share channel
 

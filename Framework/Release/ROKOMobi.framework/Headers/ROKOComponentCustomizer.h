@@ -33,6 +33,11 @@ typedef void (^CustomizerCompletionBlock)(ROKOComponentScheme *scheme, NSError *
 @property (nonatomic, strong, readonly) ROKOImageCache *imagesCache;
 
 /**
+ *  Set initial data for customizer. May be overriden in inheritors.
+ */
+- (void)initCustomizer;
+
+/**
  *  Loads scheme from specified URL
  *
  *  @param urlPath         URL path to scheme
