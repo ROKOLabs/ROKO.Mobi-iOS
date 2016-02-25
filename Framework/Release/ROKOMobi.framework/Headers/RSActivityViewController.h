@@ -161,4 +161,11 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
  */
 - (void)setText:(NSString *)text forShareChannel:(ROKOShareChannelType)channelType;
 
+/**
+ *  Blocks adding link to sharing text for specified channel
+ *
+ *  @param channelType Sharing channel that should not share link
+ */
+- (void)excludeLinkForShareChannel:(ROKOShareChannelType)channelType;
+
 @end
