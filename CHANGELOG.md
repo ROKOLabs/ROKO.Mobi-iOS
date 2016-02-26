@@ -1,4 +1,7 @@
-## Version 0.5.0
+## Version 0.5.2
+- Minor bugfixing
+
+## Version 0.5.1
 - Allows developer to block adding URL to sharing message for selected channel
 
 ## Version 0.5.0
