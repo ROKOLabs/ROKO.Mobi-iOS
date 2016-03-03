@@ -1,3 +1,6 @@
+## Version 0.5.3
+- Refactoring of ROKOShare component
+
 ## Version 0.5.2
 - Minor bugfixing
 

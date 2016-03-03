@@ -12,11 +12,7 @@
  *  Poosible types of link
  */
 typedef NS_ENUM(NSInteger, ROKOLinkType) {
-	/**
-	 *  Manual-created link
-	 */
-	ROKOLinkTypeManual,
-	
+
 	/**
 	 *  Link to share promo code
 	 */

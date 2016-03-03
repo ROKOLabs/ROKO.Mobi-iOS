@@ -10,7 +10,7 @@
 #import "ROKOComponent.h"
 #import "ROKOLink.h"
 
-typedef void (^ROKOCreateLinkResponseBlock)(NSString *linkURL, NSError *error);
+typedef void (^ROKOCreateLinkResponseBlock)(NSString * __nullable linkURL, NSNumber * __nullable linkId, NSError * __nullable error);
 
 @class ROKOLinkManager;
 
@@ -18,8 +18,8 @@ typedef void (^ROKOCreateLinkResponseBlock)(NSString *linkURL, NSError *error);
 
 @optional
 
-- (void)linkManager:(ROKOLinkManager *)manager didOpenDeepLink:(ROKOLink *)link;
-- (void)linkManager:(ROKOLinkManager *)manager didFailToOpenDeepLinkWithError:(NSError *)error;
+- (void)linkManager:(nonnull ROKOLinkManager *)manager didOpenDeepLink:(nonnull ROKOLink *)link;
+- (void)linkManager:(nonnull ROKOLinkManager *)manager didFailToOpenDeepLinkWithError:(nullable NSError *)error;
 
 @end
 
@@ -36,26 +36,26 @@ typedef void (^ROKOCreateLinkResponseBlock)(NSString *linkURL, NSError *error);
  *
  *  @param url Link to be handled
  */
-- (void)handleDeepLink:(NSURL *)url;
+- (void)handleDeepLink:(nonnull NSURL *)url;
 
 /**
  *  Handle restoration from an NSUserActivity, returning whether or not the restoration was from a ROKO univeral link
  *
  *  @param userActivity The NSUserActivity that caused the application opening
  */
-- (void)continueUserActivity:(NSUserActivity *)userActivity;
+- (void)continueUserActivity:(nonnull NSUserActivity *)userActivity;
 
 /**
  *  Generates a new link on Portal
  *
  *  @param linkName     Desired name of the link. Can be used on portal
  *  @param linkType     Type of the new link
- *  @param valityLink   Final part of the link (after domain). Request returns error if another link with the same vality already exists
+ *  @param sourceURL    Final part of the link (after domain). Request returns error if another link with the same vality already exists
  *  @param shareChannel Name of share channel that will be used to destribute the link
  *  @param settings     Additional settings
- *  @param code         Promo or referral code to be shared. Used for ROKOLinkTypePromo and ROKOLinkTypeReferral only
+ *  @param sharingCode  Promo or referral code to be shared. Used for ROKOLinkTypePromo and ROKOLinkTypeReferral only
  *  @param block        Completion block
  */
-- (void)createLinkWithName:(NSString *)linkName type:(ROKOLinkType)linkType vanityLink:(NSString*)valityLink channelName:(NSString *)shareChannel code:(NSString *)code advancedSettings:(NSDictionary *)settings completionBlock:(ROKOCreateLinkResponseBlock)block;
+- (void)createLinkWithName:(nullable NSString *)linkName type:(ROKOLinkType)linkType sourceURL:(nullable NSString*)sourceURL channelName:(nullable NSString *)shareChannel sharingCode:(nullable NSString *)sharingCode advancedSettings:(nullable NSDictionary *)settings completionBlock:(nullable ROKOCreateLinkResponseBlock)block;
 
 @end

@@ -24,6 +24,11 @@
 @property (nonatomic, strong) NSNumber *value;
 
 /**
+ *  Discount limit. Applicable for ROKODiscountTypeMatching only
+ */
+@property (nonatomic, strong) NSNumber *limit;
+
+/**
  *  Discount type
  */
 @property (nonatomic, assign) ROKODiscountType type;

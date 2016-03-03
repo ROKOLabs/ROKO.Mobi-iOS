@@ -32,7 +32,11 @@ typedef NS_ENUM(NSInteger, ROKODiscountType) {
 	/**
 	 *  The goods are absolutely free
 	 */
-	ROKODiscountTypeFree
+	ROKODiscountTypeFree,
+	/**
+	 *	Matching discount
+	 */
+	ROKODiscountTypeMatching
 };
 
 /**
@@ -42,9 +46,15 @@ typedef NS_ENUM(NSInteger, ROKODiscountType) {
 
 /**
  *  Value of discount
- * @see type
+ *  @see type
  */
 @property (nonatomic, strong) NSNumber *value;
+
+/**
+ *  Limit of discount. Applicable for ROKODiscountTypeMatching only
+ *  @see type
+ */
+@property (nonatomic, strong) NSNumber *limit;
 
 /**
  *  Type of discount

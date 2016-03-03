@@ -9,9 +9,19 @@
 #import "ROKOComponentScheme.h"
 #import "ROKOFontDataObject.h"
 
+/**
+ *  UI scheme for headline of Invite Friends view
+ */
 @interface ROKOInviteHeadlineScheme : ROKOComponentScheme
 
+/**
+ *  Headline text
+ */
 @property (nonatomic, copy) NSString *text;
+
+/**
+ *  Headline font
+ */
 @property (nonatomic, strong) ROKOFontDataObject *font;
 
 @end

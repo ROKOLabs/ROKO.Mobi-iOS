@@ -9,10 +9,24 @@
 #import "ROKOComponentCustomizer.h"
 #import "ROKOInviteScheme.h"
 
-typedef void (^ROKOInviteCustomizerCompletionBlock)(ROKOInviteScheme *scheme, NSError *error);
+/**
+ *  Completion block for load Invite Friends UI scheme request
+ *
+ *  @param scheme Loaded and parsed scheme
+ *  @param error  Error. Contains null if request is finished successully
+ */
+typedef void (^ROKOInviteCustomizerCompletionBlock)(ROKOInviteScheme * __nullable scheme, NSError * __nullable error);
 
+/**
+ *  UI customizer for ROKOInviteFriendsViewController
+ */
 @interface ROKOInviteCustomizer : ROKOComponentCustomizer
 
-- (void)loadSchemeWithCompletionBlock:(ROKOInviteCustomizerCompletionBlock)completionBlock;
+/**
+ *  Loads UI Scheme from Portal
+ *
+ *  @param completionBlock Block to be called when scheme is loaded
+ */
+- (void)loadSchemeWithCompletionBlock:(ROKOInviteCustomizerCompletionBlock __nullable)completionBlock;
 
 @end
