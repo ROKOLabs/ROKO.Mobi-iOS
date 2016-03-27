@@ -12,13 +12,16 @@
 @class ROKOUserObject;
 @class ROKOPortalManager;
 @class ROKOPortalInfo;
+@class ROKOSessionInfo;
 
 typedef void(^ROKOPortalRequestCompletionBlock)(NSError * __nullable error);
 typedef void(^ROKOPortalRequestApplicationsCompletionBlock)(NSArray * __nullable applications, NSError * __nullable error);
 typedef void(^ROKOPortalInfoRequestCompletionBlock)(ROKOPortalInfo * __nullable info, NSError *__nullable error);
+typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullable info, NSError *__nullable error);
 
 #import "ROKOUserObject.h"
 #import "ROKOPortalInfo.h"
+#import "ROKOSessionInfo.h"
 
 /**
  *  Provides API for login/logout/signup to ROKO Portal. Uses ROKOHTTPClient.
@@ -75,15 +78,22 @@ typedef void(^ROKOPortalInfoRequestCompletionBlock)(ROKOPortalInfo * __nullable 
  *  @param password        User password
  *  @param ambassadorCode  Promo code of another user. See Promo descreption
  *  @param shareChannel    Use this parameter to specify share channel in case if user signs up via deep link
- *  @param completionBlock Completion block. Called when server response is received
+ *  @param completionBlock Completion block. Called when server response is received. Contains error description in case of fail
  */
 - (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 /**
  *  Loads information about portal application
  *
- *  @param completionBlock Completion block. Called when server response is received
+ *  @param completionBlock Completion block. Called when server response is received. Contains ROKOPortalInfo object or error in case of fail
  */
 - (void)getPortalInfoWithCompletionBlock:(nonnull ROKOPortalInfoRequestCompletionBlock)completionBlock;
+
+/**
+ *  Loads information about current user session
+ *
+ *  @param completionBlock Completion block. Called when server response is received. Contains ROKOSessionInfo object or error in case of fail
+ */
+- (void)getSessionInfoWithCompletionBlock:(nonnull ROKOSessionInfoRequestCompletionBlock)completionBlock;
 
 @end

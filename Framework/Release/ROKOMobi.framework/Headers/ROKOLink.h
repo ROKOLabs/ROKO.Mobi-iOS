@@ -9,9 +9,14 @@
 #import "ROKODataObject.h"
 
 /**
- *  Poosible types of link
+ *  Possible types of link
  */
 typedef NS_ENUM(NSInteger, ROKOLinkType) {
+	
+	/**
+	 *  Manual created link. Can be created on portal only, not thru mobile SDK
+	 */
+	ROKOLinkTypeManual,
 
 	/**
 	 *  Link to share promo code
@@ -65,13 +70,23 @@ typedef NS_ENUM(NSInteger, ROKOLinkType) {
 @property (nonatomic, copy) NSString *vanityLink;
 
 /**
- *  Link with cusom domain. For example, yourapp://link
+ *  Link with custom domain. For example, yourapp://link
  */
 @property (nonatomic, copy) NSString *customDomainLink;
+
+/**
+ *  Type of the link
+ */
+@property (nonatomic, assign) ROKOLinkType type;
 
 /**
  *  Referral code this link is targeted to
  */
 @property (nonatomic, copy) NSString *referralCode;
+
+/**
+ *  Promo code this link is targeted to
+ */
+@property (nonatomic, copy) NSString *promoCode;
 
 @end

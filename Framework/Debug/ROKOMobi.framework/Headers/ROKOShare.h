@@ -59,7 +59,6 @@
 
 @end
 
-
 /**
  *  Incapsulates share logic
  */
@@ -85,7 +84,7 @@
 @property (nonatomic, strong) UIImage *image;
 
 /**
- *  Unique identifier of sharing content. May be nill
+ *  Unique identifier of sharing content. May be nil
  */
 @property (nonatomic, copy) NSString *contentId;
 
@@ -119,7 +118,12 @@
  */
 @property (nonatomic, copy) NSString *text;
 
-- (void)shareWithChannel:(ROKOShareChannelScheme *)channelScheme;
+/**
+ *  Shares content with specified channel
+ *
+ *  @param channelType Share channel to be used
+ */
+- (void)shareWithChannelType:(ROKOShareChannelType)channelType;
 
 /**
  *  Sets special text for given share channel only
@@ -136,11 +140,32 @@
  */
 - (void)excludeLinkForShareChannel:(ROKOShareChannelType)channelType;
 
+/**
+ *  Allows to prefill recipients list for specified channel. Works for E-mail and SMS channles only
+ *
+ *  @param recipients  Recipients to be set to message composer. Array of strings.
+ *  @param channelType Share channel to use the recipient list.
+ */
+- (void)setRecipients:(NSArray *)recipients forChannel:(ROKOShareChannelType)channelType;
+
+/**
+ *  Returns recipient list set for the specified channel
+ *
+ *  @param channelType Share channel
+ *
+ *  @return Array of strings set in setRecipients:forChannel:
+ */
+- (NSArray *)recipientsForChannel:(ROKOShareChannelType)channelType;
+
+/**
+ *  Load share scheme from Portal
+ */
 - (void)loadSchemeFromPortal;
 
 - (void)shareBegin;
 - (void)shareClose;
 - (void)shareCompleteForChannel:(ROKOShareChannelType)channelType;
 - (void)shareOfLinkWithId:(NSNumber *)linkId completeForChannel:(ROKOShareChannelType)channelType;
+- (void)promoSharedWithChannelType:(ROKOShareChannelType)channelType;
 
 @end
