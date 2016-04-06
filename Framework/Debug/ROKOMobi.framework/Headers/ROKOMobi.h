@@ -26,3 +26,4 @@ FOUNDATION_EXPORT const unsigned char ROKOMobiVersionString[];
 #import <ROKOMobi/ROKOPortalManager.h>
 #import <ROKOMobi/ROKOLinkManager.h>
 #import <ROKOMobi/ROKOInviteFriendsViewController.h>
+#import <ROKOMobi/ROKOInviteCustomizer.h>

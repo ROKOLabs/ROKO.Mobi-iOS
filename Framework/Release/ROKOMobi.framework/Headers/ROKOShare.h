@@ -162,6 +162,13 @@
  */
 - (void)loadSchemeFromPortal;
 
+/**
+ *  Adds a block that will be called on share process is completed
+ *
+ *  @param completionBlock Block to be added
+ */
+- (void)addShareCompletionBlock:(void (^)(ROKOShareChannelType type, ROKOSharingResult result))completionBlock;
+
 - (void)shareBegin;
 - (void)shareClose;
 - (void)shareCompleteForChannel:(ROKOShareChannelType)channelType;

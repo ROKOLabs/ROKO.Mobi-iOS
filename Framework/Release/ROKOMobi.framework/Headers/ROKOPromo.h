@@ -9,28 +9,66 @@
 #import "ROKOComponent.h"
 #import "ROKOPromoDiscountItem.h"
 
+/**
+ *  Possible delivery ways for promo code
+ */
 typedef NS_ENUM(NSInteger, ROKOPromoDeliveryType) {
-    ROKOPromoDeliveryTypeUnknown,
-    ROKOPromoDeliveryTypePush,
-    ROKOPromoDeliveryTypeEvent,
-    ROKOPromoDeliveryTypeLink
+	
+	/**
+	 *  Unknown or custom way
+	 */
+	ROKOPromoDeliveryTypeUnknown,
+	
+	/**
+	 *  Push notification
+	 */
+	ROKOPromoDeliveryTypePush,
+	
+	/**
+	 *  Event-based notification
+	 */
+	ROKOPromoDeliveryTypeEvent,
+	
+	/**
+	 *  Deep link
+	 */
+	ROKOPromoDeliveryTypeLink
 };
 
-typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem *discount, NSError *error);
+typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem * _Nullable discount, NSError * _Nullable error);
 
+/**
+ *  Helps to handle promo codes and campaigns
+ */
 @interface ROKOPromo : ROKOComponent
 
-- (void)loadPromoDiscountWithPromoCode:(NSString *)promoCode completionBlock:(ROKOPromoDiscountCompletionBlock)completionBlock;
-- (void)markPromoCodeAsUsed:(NSString *)promoCode
-            valueOfPurchase:(NSNumber *)valueOfPurchase
-            valueOfDiscount:(NSNumber *)valueOfDiscount
-               deliveryType:(ROKOPromoDeliveryType)deliveryType
-            completionBlock:(ROKOMarkDiscountCompletionBlock)completionBlock;
+/**
+ *  Receives information about promo code
+ *
+ *  @param promoCode       Promo code to get information about
+ *  @param completionBlock Block that will be called when request is completed. Block definition: void(ROKOPromoDiscountItem *discount, NSError *error)
+ */
+- (void)loadPromoDiscountWithPromoCode:(nonnull NSString *)promoCode completionBlock:(nonnull ROKOPromoDiscountCompletionBlock)completionBlock;
 
-// Logging methods
+/**
+ *  Marks promo code as used by the current user.
+ *
+ *  @param promoCode       Promo code to be marked
+ *  @param valueOfPurchase Purchase value. Needed for analytics
+ *  @param valueOfDiscount Total discount. Needed for analytics
+ *  @param deliveryType    The way this promo code was obtained
+ *  @param completionBlock Block to be called on request is finished. Format: void(NSError *error)
+ */
+- (void)markPromoCodeAsUsed:(nonnull NSString *)promoCode
+            valueOfPurchase:(nullable NSNumber *)valueOfPurchase
+            valueOfDiscount:(nullable NSNumber *)valueOfDiscount
+               deliveryType:(ROKOPromoDeliveryType)deliveryType
+            completionBlock:(nullable ROKOMarkDiscountCompletionBlock)completionBlock;
+
+// Analytics methods
 - (void)promoSentForPromoCampaign:(NSInteger)promoCampaign
-                    withPromoCode:(NSString *)promoCode
-                isInitiatedByPush:(BOOL)isInitatedByPush;
+                    withPromoCode:(nonnull NSString *)promoCode
+                isInitiatedByPush:(BOOL)isInitiatedByPush;
 - (void)promoOpenedForPromoCampaign:(NSInteger)promoCampaign;
 - (void)promoClosed;
 - (void)promoSaved;
