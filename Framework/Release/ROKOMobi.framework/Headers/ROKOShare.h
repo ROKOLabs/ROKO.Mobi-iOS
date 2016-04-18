@@ -17,6 +17,7 @@
 #define SHARE_CHANNEL_FACEBOOK @"Facebook"
 #define SHARE_CHANNEL_TWITTER @"Twitter"
 #define SHARE_CHANNEL_SMS @"SMS"
+#define SHARE_CHANNEL_COPY @"Copy"
 #define SHARE_CHANNEL_UNKNOWN @"Unknown"
 
 @class ROKOShare;

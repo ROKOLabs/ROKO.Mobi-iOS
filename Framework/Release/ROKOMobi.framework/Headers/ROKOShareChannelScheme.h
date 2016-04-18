@@ -32,7 +32,12 @@ typedef NS_ENUM(NSInteger, ROKOShareChannelType){
 	/**
 	 *  Message share channel. Can be used to send SMS/MMS
 	 */
-	ROKOShareChannelTypeMessage
+	ROKOShareChannelTypeMessage,
+    /**
+     *  Copy share channel. Used for referral code sharing.
+     *  Copies referral code to clipboard
+     */
+    ROKOShareChannelTypeCopy
 };
 
 /**

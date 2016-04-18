@@ -38,10 +38,20 @@ typedef void (^CustomizerCompletionBlock)(ROKOComponentScheme *scheme, NSError *
 - (void)initCustomizer;
 
 /**
+ *  Loads scheme from specified URL. Returns cached scheme if exists. Response is not sending if previous request was sent less than 15 minutes ago
+ *
+ *  @param urlPath         URL path to scheme
+ *  @param completionBlock Block that should be called
+ */
+- (void)loadSchemeIfNeededFromURLPath:(NSString *)urlPath withCompletionBlock:(CustomizerCompletionBlock)completionBlock;
+
+/**
  *  Loads scheme from specified URL
  *
  *  @param urlPath         URL path to scheme
  *  @param completionBlock Block that should be called
+ *
+ *  @note Please do not call this method without strong reasons. Use loadSchemeIfNeededFromURLPath:withCompletionBlock: instead.
  */
 - (void)loadSchemeFromURLPath:(NSString *)urlPath withCompletionBlock:(CustomizerCompletionBlock)completionBlock;
 

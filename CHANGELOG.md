@@ -1,3 +1,6 @@
+## Version 1.1
+Add some optimization and bug fixing
+
 ## Version 1.0.1
 Some stability improvements 
 
