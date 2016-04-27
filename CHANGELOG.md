@@ -1,16 +1,16 @@
 ## Version 1.2
-ROKOLinkManager now supports links with parameters
-Share UI looks better with horizontal-oriented images
-Bug fixed: Invite friends. Search in contacts is case sensitive 
+- ROKOLinkManager now supports links with parameters
+- Share UI looks better with horizontal-oriented images
+- Bug fixed: Invite friends. Search in contacts is case sensitive 
 
 ## Version 1.1
-Add some optimization and bug fixing
+- Add some optimization and bug fixing
 
 ## Version 1.0.1
-Some stability improvements 
+- Some stability improvements 
 
 ## Version 1.0.0
-Version 1.0.0 released!
+- Version 1.0.0 released!
 
 ## Version 0.5.3
 - Refactoring of ROKOShare component
