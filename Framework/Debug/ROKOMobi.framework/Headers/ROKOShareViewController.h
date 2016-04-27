@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
 /**
  *  ROKOShare object that incapsulates sharing logic. Lazy-loading property.
  */
-@property (nonatomic, strong) ROKOShare *shareManager;
+@property (nonatomic, strong) ROKOShare * _Nonnull shareManager;
 
 /**
  *  shouldLoadSchemeFromPortal if YES load scheme from portal, if NO scheme should be configured locally
@@ -51,25 +51,27 @@ typedef NS_ENUM(NSInteger, ROKOSharingResult){
 /**
  *  Default comment for sharing content
  */
-@property (copy, nonatomic) NSString *displayMessage;
+@property (copy, nonatomic) NSString * _Nullable displayMessage;
 
 /**
  *  Background image for share view
  */
-@property (weak, nonatomic) UIImage *backgroundImage;
+@property (weak, nonatomic) UIImage * _Nullable backgroundImage;
 
 /**
- *  Creates a new instance of RSActivityViewController
+ *  Creates a new instance of ROKOShareViewController
  *
- *  @return New RSActivityViewController object
+ *  @param contentId unique identifier of sharing content
+ *
+ *  @return New ROKOShareViewController object
  */
-+ (instancetype)buildController;
++ (nullable instancetype)buildControllerWithContentId:(nonnull NSString *)contentId;
 
 /**
  *  Creates a RSActivityViewController object for referral code sharing. Works for registered user only
  *
  *  @return New RSActivityViewController object or nil if user is not logged in
  */
-+ (instancetype)buildReferralShareController;
++ (nullable instancetype)buildReferralShareController;
 
 @end
