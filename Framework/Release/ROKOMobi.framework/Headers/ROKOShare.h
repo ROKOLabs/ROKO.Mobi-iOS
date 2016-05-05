@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <AvailabilityMacros.h>
 
 #import "ROKOComponent.h"
 #import "ROKOShareViewController.h"
@@ -90,7 +91,12 @@
 @property (nonatomic, copy) NSString *contentId;
 
 /**
- *  Type of sharing content. Used for analytic.
+ *  Identifier of sharing portal link. Set this property if you share deep link to get correct reports on ROKO portal
+ */
+@property (nonatomic, strong) NSNumber *linkId;
+
+/**
+ *  Type of sharing content. Used for analytic
  */
 @property (nonatomic, copy) NSString *contentType;
 
@@ -186,16 +192,20 @@
  *  Sends analytic event about successfull finish of sharing process
  *
  *  @param channelType Share channel
+ * 
+ *  @return Method returns error is contentId field is not set. Event can not be sent in this case
  */
-- (void)shareCompleteForChannel:(ROKOShareChannelType)channelType;
+- (NSError *)shareCompleteForChannel:(ROKOShareChannelType)channelType;
 
 /**
  *  Sends analytic event about successfull finish of link sharing
  *
  *  @param linkId      Shared link id
  *  @param channelType Share channel
+ *
+ *  @note This method is deprecated and will be removed soon. Please set linkId property and use shareCompleteForChannel: method instead
  */
-- (void)shareOfLinkWithId:(NSNumber *)linkId completeForChannel:(ROKOShareChannelType)channelType;
+- (void)shareOfLinkWithId:(NSNumber *)linkId completeForChannel:(ROKOShareChannelType)channelType DEPRECATED_ATTRIBUTE;
 
 /**
  *  Sends analytic event about successfull finish of promo code sharing

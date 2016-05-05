@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		WmXTBGeCf8R4ox+nfS4Zt1DXl34=
+		zVSwbQ0XL4BS3Cv3Ciq9G0HxpHw=
 		</data>
 		<key>Headers/RLComposerWorkflowController.h</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>Headers/ROKOShare.h</key>
 		<data>
-		6vXB4AQK9p0maS2/MJo4qcfff7k=
+		H1l/6sK4/DnRApnA+vtbTAuL4aw=
 		</data>
 		<key>Headers/ROKOShareChannelScheme.h</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7dMZ6wJ9hs9zQAcjBXTK5SkQpKI=
+		z7u2Er6xiOwwxCOBXk+CDTCil8A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -242,75 +242,75 @@
 		</data>
 		<key>RLComposerWorkflow.storyboardc/4nf-em-Q5P-view-Ym9-j0-GdZ.nib</key>
 		<data>
-		eVVeH2Cgy5DcEqRD9S6uIu15P2A=
+		W9qF2VKYP2K0uUVuEmERMh3/qAQ=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/8IJ-oJ-gag-view-QAZ-EC-XSv.nib</key>
 		<data>
-		ZXbSK9LSWvmwchg00cotDqkAe2s=
+		d0ZYLFSUHmbqdH5N5h49PZmk9G0=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/Info.plist</key>
 		<data>
-		9hRpIe71gYshnkhFgJYLg659M/U=
+		v9/iqZ8riOx0PC6AKZBM8O+f5jk=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/LhR-PF-tNH-view-GsU-5Y-o6O.nib</key>
 		<data>
-		1FAIfC+P3oyO12XSVYd3GZrWp6U=
+		LVU1Sl2iuh6UMvHRJQuEvQlvgCc=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/Mzi-2M-rkh-view-vEu-4N-SQu.nib</key>
 		<data>
-		Jk3/2sBPB/iwxGb3aKF3EI5BUy4=
+		DgCEJgDZ2xKFJmq9Kr9719VFhkA=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/c80-h3-YFC-view-rQH-c1-hfB.nib</key>
 		<data>
-		Wv/OCRbX8sCkqtNpU2qF8JyzWlc=
+		0bWRTdJwONrOQ5PWq0X1UQWIzIo=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/cameraController.nib</key>
 		<data>
-		uIgkqEe7FMmA0RCrPRQ0qFNaJZA=
+		dbFbcUOyMB2ICaP6MxUFTxQeDTA=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/imageCaptureController.nib</key>
 		<data>
-		lPolb1Qbtb6GlGU3fb7gbQtl+Bo=
+		peNBHWuzRIkd43Jpm7leCIrEEEw=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/nRk-CL-MQl-view-gzh-eN-DQn.nib</key>
 		<data>
-		oAWeefByS3EqVjc29pwaupz33kQ=
+		kLRVdHGS4r2sdfXcE0dy3OCFQNo=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/photoPreviewController.nib</key>
 		<data>
-		iifQ3qUQGiud6oihySHmF5KQl4A=
+		JUh14BRDu2kSrj9hFbm3GgNIZ+g=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/shareController.nib</key>
 		<data>
-		mJe2XpkZHrz3m5m+K/EFztaells=
+		mKm/A4ge+HQtchwQSH4BnhnOizk=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/stickersController.nib</key>
 		<data>
-		+PSjgmZPm3+uuGabJRIfjt8KLfA=
+		sqwa3kTJAyp3y1PVDK42F14vG44=
 		</data>
 		<key>RLComposerWorkflow.storyboardc/unlockController.nib</key>
 		<data>
-		jYDy+JRZt1w6t8GgvXumRL2LvBE=
+		k1Tf7tYjAWKuiHjPntyelKRnj8A=
 		</data>
 		<key>RLStickerPackIconCell.nib</key>
 		<data>
-		ypEoHJT1Z3mW26ZzNCtPRLiRY6o=
+		qiZ7hYvP504BteJZaJ66+PZ/bEg=
 		</data>
 		<key>RLStickerPackTitleAndIconCell.nib</key>
 		<data>
-		3u6mmcmAuwHJwlFTh3AExyppktU=
+		KIMNOUL9snA7nUDDcmQ6nrTNJvI=
 		</data>
 		<key>RLStickerPackTitleCell.nib</key>
 		<data>
-		jfFuw/H0Dk5C38C9AziV+bq2ODQ=
+		RNYkH0Cu4gVHnmWIBZEAZFKNTSs=
 		</data>
 		<key>RLStickersPanel.nib</key>
 		<data>
-		hN591AB/5s1jEtyd5AbHU4vmYhQ=
+		++v5k9zYyg+G6Zv1Xrl0EeW2bYU=
 		</data>
 		<key>ROKOOverlayViewController.nib</key>
 		<data>
-		sJqZk7XQM8N45yIqTBBjcQ8CJy0=
+		azeZeQDd4QUIDJ9jVtlDRAsv2pE=
 		</data>
 		<key>ROKOReferral.storyboardc/Info.plist</key>
 		<data>
@@ -318,19 +318,19 @@
 		</data>
 		<key>ROKOReferral.storyboardc/ROKOContactPicker.nib</key>
 		<data>
-		jG4oxwpk7xuugaU7NmVups9bNpA=
+		oN/IOWffHl01BFZnYdBIQkHRHJE=
 		</data>
 		<key>ROKOReferral.storyboardc/ROKOInviteFriends.nib</key>
 		<data>
-		b8bhBu2aJVSHCo+zT7RcGuOcJa0=
+		3tQiZM0Cu6hJmyc6qjRbdJjvoLQ=
 		</data>
 		<key>ROKOReferral.storyboardc/hXl-yB-KMh-view-Szw-qq-7Ti.nib</key>
 		<data>
-		6KHAi3paDSPkIG8qdyBWAaZK1A8=
+		etOZ5qOPdWAFlD0UkQPGUPEHmxs=
 		</data>
 		<key>ROKOReferral.storyboardc/vWp-xX-a7h-view-ewv-A4-Fm0.nib</key>
 		<data>
-		DpkmZwIqpgTUOtruKasnzOQvytk=
+		xy3eSLS4A/VlUSnB6hNrq4U8R5w=
 		</data>
 		<key>ROKOShare.storyboardc/Info.plist</key>
 		<data>
@@ -338,11 +338,11 @@
 		</data>
 		<key>ROKOShare.storyboardc/KIR-ev-jO5-view-i1v-o9-CXY.nib</key>
 		<data>
-		6xdfJATnWuCiTLG9kJQn5YcClOM=
+		QNsOBeNg+fkvHGvokerkRuzugsk=
 		</data>
 		<key>ROKOShare.storyboardc/ROKOShareViewController.nib</key>
 		<data>
-		9ACtXSCHrtHa7bs+Ua81vxn3fjE=
+		JvHVrMRhI7DPo736VRFNsePQVHw=
 		</data>
 		<key>camera@2x.png</key>
 		<data>
@@ -400,11 +400,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WmXTBGeCf8R4ox+nfS4Zt1DXl34=
+			zVSwbQ0XL4BS3Cv3Ciq9G0HxpHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y5kyMg9dawsFC5BurPpuWI4PqTgDHPwmNTj9+d9iBEY=
+			BxxMEDgQNBnbbrAqv6HaLjvq4xwzvLkDYEKWDIsUXGc=
 			</data>
 		</dict>
 		<key>Headers/RLComposerWorkflowController.h</key>
@@ -862,11 +862,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6vXB4AQK9p0maS2/MJo4qcfff7k=
+			H1l/6sK4/DnRApnA+vtbTAuL4aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ans8veDOm09T3WQoP72dEXYx3SxqVEPF1huFgoOSDDM=
+			15O+zaxKgiXPVtfbSE4WlRHt80SjLPqbdpbBbv1ueyU=
 			</data>
 		</dict>
 		<key>Headers/ROKOShareChannelScheme.h</key>
@@ -1038,198 +1038,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eVVeH2Cgy5DcEqRD9S6uIu15P2A=
+			W9qF2VKYP2K0uUVuEmERMh3/qAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0cmgf/ko5O0pVVBfqDbxMAt3w+dAvEzs3p8oBmhJrD4=
+			UzkUY+gELrMdYsbmXuB2KX8Z1KhcdHujPsTl/cT/MXw=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/8IJ-oJ-gag-view-QAZ-EC-XSv.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZXbSK9LSWvmwchg00cotDqkAe2s=
+			d0ZYLFSUHmbqdH5N5h49PZmk9G0=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ejFCSQfn3OBUd1sW6ZTKQtoK7pfCC/2UIuKAZab+TQ=
+			EWyi/5xvxaTzRud6/VnLwptnn2kCH5+pqialw7MY7Jc=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9hRpIe71gYshnkhFgJYLg659M/U=
+			v9/iqZ8riOx0PC6AKZBM8O+f5jk=
 			</data>
 			<key>hash2</key>
 			<data>
-			AqL/aLcVWo83TDrZZsS2nPcLvoUsU/Gsb9w8T044JPs=
+			o42dNK/9zNLWBJ+0BQ1TvF4w07Eim2i6/U0a8TbIYeU=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/LhR-PF-tNH-view-GsU-5Y-o6O.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1FAIfC+P3oyO12XSVYd3GZrWp6U=
+			LVU1Sl2iuh6UMvHRJQuEvQlvgCc=
 			</data>
 			<key>hash2</key>
 			<data>
-			TgJQyc2jbelR05g32e6YV3gfCIhe9c/Wijwy+lD+Tsw=
+			W6LBuJAbBbfa7adtOAqNBPTipXJAU4JIzaLFzOKYVYM=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/Mzi-2M-rkh-view-vEu-4N-SQu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jk3/2sBPB/iwxGb3aKF3EI5BUy4=
+			DgCEJgDZ2xKFJmq9Kr9719VFhkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			RG2fBkGY0FExZWLqNVgxTv+/oHE4EYQ9TfUWbv7NLFo=
+			XXQpk1+K27GMDKZ3T5zLHsrqbs4ZPrOql06TeoLlhhs=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/c80-h3-YFC-view-rQH-c1-hfB.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Wv/OCRbX8sCkqtNpU2qF8JyzWlc=
+			0bWRTdJwONrOQ5PWq0X1UQWIzIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			J3dOaO5Y4mIBAhY2ackBPDjXiZXGVKq/Atd6xjixxKU=
+			nyveh76F5GMPoKDVXRgLiWk9bbE2hRoguhhwgPNRvPc=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/cameraController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uIgkqEe7FMmA0RCrPRQ0qFNaJZA=
+			dbFbcUOyMB2ICaP6MxUFTxQeDTA=
 			</data>
 			<key>hash2</key>
 			<data>
-			QWlrZSY0nWd2SazH3iqS+gdl2naizO5K+3hgOITMy10=
+			oEGU8frze9TAhdFhYAf4x4/kJ/O6vo4jnc/dTwUx0mw=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/imageCaptureController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lPolb1Qbtb6GlGU3fb7gbQtl+Bo=
+			peNBHWuzRIkd43Jpm7leCIrEEEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			A03xm79WRfygtrEbJi5B0dRGdmDGphvif8zcNH9gSOg=
+			L1H48tVtRb8PoJY8i93PNWWgirmyvLN52NCV4uEtlNA=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/nRk-CL-MQl-view-gzh-eN-DQn.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oAWeefByS3EqVjc29pwaupz33kQ=
+			kLRVdHGS4r2sdfXcE0dy3OCFQNo=
 			</data>
 			<key>hash2</key>
 			<data>
-			cXZHX38P3G/scW7CgvCmtjMjIA82Xwv8E+OLfpLU5qk=
+			R5hxZecBv8eTjUdIrVDKVPwTKXUPemn4PZj3vMLBps4=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/photoPreviewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iifQ3qUQGiud6oihySHmF5KQl4A=
+			JUh14BRDu2kSrj9hFbm3GgNIZ+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			EqMyqPrhr+ODufYADadQ+T0EbufUMlTC3UUIuW2Uy4w=
+			EjZ+1eAOIAiscgHZfgCgBXX694UvIaGuqsy5NjL8nVw=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/shareController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJe2XpkZHrz3m5m+K/EFztaells=
+			mKm/A4ge+HQtchwQSH4BnhnOizk=
 			</data>
 			<key>hash2</key>
 			<data>
-			J1AMNl+1008mJVtuAcEms7B4K0fnBQpuynAr/Y1ZO7Q=
+			yJVNGV/DhYW09JrBVydvUNM3vWZebb59Jf2jUrYyXOo=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/stickersController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+PSjgmZPm3+uuGabJRIfjt8KLfA=
+			sqwa3kTJAyp3y1PVDK42F14vG44=
 			</data>
 			<key>hash2</key>
 			<data>
-			CCrCclkhy3CaUDZEp/pF9E2q4bFs6ERh8IRlFp4VZ0E=
+			W79ZE5BuqTljjXixaWgvZJoEA4Lra33dd7mw7G0W+ok=
 			</data>
 		</dict>
 		<key>RLComposerWorkflow.storyboardc/unlockController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jYDy+JRZt1w6t8GgvXumRL2LvBE=
+			k1Tf7tYjAWKuiHjPntyelKRnj8A=
 			</data>
 			<key>hash2</key>
 			<data>
-			lgESkZ4/k41OKMdLtNmzlg+n4oCFGKT7rgrAUqNxYIs=
+			t76xENDZy/Nx8oWn6rBNCcTUFLPynbHPl2FIR0YJNBY=
 			</data>
 		</dict>
 		<key>RLStickerPackIconCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ypEoHJT1Z3mW26ZzNCtPRLiRY6o=
+			qiZ7hYvP504BteJZaJ66+PZ/bEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			VDTWsuXnnh0prnZkEY75lV8CQofLLcz9n+U7Z2WEwfg=
+			YvgNS/evDn5pR76oIK9RYD0MN3n9b+E5Yu4Ue1xChVY=
 			</data>
 		</dict>
 		<key>RLStickerPackTitleAndIconCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3u6mmcmAuwHJwlFTh3AExyppktU=
+			KIMNOUL9snA7nUDDcmQ6nrTNJvI=
 			</data>
 			<key>hash2</key>
 			<data>
-			XX7dshohd9glqfmBUXeZl7xQl2nPSs+ZPMwA8/R6szw=
+			etX+lDfjrqvHqNtoLP0Zcq0b4M+QwkZRZCF3czHzv4M=
 			</data>
 		</dict>
 		<key>RLStickerPackTitleCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jfFuw/H0Dk5C38C9AziV+bq2ODQ=
+			RNYkH0Cu4gVHnmWIBZEAZFKNTSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			H97NGy/iHNxPFPuZfz6XkHApBVXtaCdN/TP98XUWnE8=
+			bMj7vxf2FrzXRui4hPqTCgqBlos+YctQrDiR6/j1dKM=
 			</data>
 		</dict>
 		<key>RLStickersPanel.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hN591AB/5s1jEtyd5AbHU4vmYhQ=
+			++v5k9zYyg+G6Zv1Xrl0EeW2bYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wqix0WEyNJo+zSHQJVJaPDDPawYye7H8l69YaLRccNU=
+			6cFtb+QXkdurLE5sEIdia6nZSMcFeAd8VmAHpglAqWE=
 			</data>
 		</dict>
 		<key>ROKOOverlayViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sJqZk7XQM8N45yIqTBBjcQ8CJy0=
+			azeZeQDd4QUIDJ9jVtlDRAsv2pE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ZABA6YAVxNJjxWQBo8Nd6H25js1cHXdBG4CY04ykAM=
+			5lDxsHN/XA3Yqsmi909ZOo27Q4ldPb8cJCICLPUBNwU=
 			</data>
 		</dict>
 		<key>ROKOReferral.storyboardc/Info.plist</key>
@@ -1247,44 +1247,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jG4oxwpk7xuugaU7NmVups9bNpA=
+			oN/IOWffHl01BFZnYdBIQkHRHJE=
 			</data>
 			<key>hash2</key>
 			<data>
-			FL9MaA4FiIUjS5CBQEvjhswNJzMn9yIf+875K8FaD+A=
+			0CzreivgBImk9MFxh5KIKs1+sux0AmqkWVyP+4CADec=
 			</data>
 		</dict>
 		<key>ROKOReferral.storyboardc/ROKOInviteFriends.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b8bhBu2aJVSHCo+zT7RcGuOcJa0=
+			3tQiZM0Cu6hJmyc6qjRbdJjvoLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			V/r9zbadEVeMpagYCxaeUL4g6ycM4XG2t+Cqrfbta9A=
+			4I/ikWMVMILd1PL7PhAsxTsiqoejD70BxVKyuJQgR20=
 			</data>
 		</dict>
 		<key>ROKOReferral.storyboardc/hXl-yB-KMh-view-Szw-qq-7Ti.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6KHAi3paDSPkIG8qdyBWAaZK1A8=
+			etOZ5qOPdWAFlD0UkQPGUPEHmxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			d91k7SpMgMr0WaRBMp/9OI3pxEZ/F2aWEUwsyT3BFuA=
+			3LoL1QrFoFgwEBl9IB3CRrsxDDUI/d+H9w8OWSgbHF0=
 			</data>
 		</dict>
 		<key>ROKOReferral.storyboardc/vWp-xX-a7h-view-ewv-A4-Fm0.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DpkmZwIqpgTUOtruKasnzOQvytk=
+			xy3eSLS4A/VlUSnB6hNrq4U8R5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			jb5fjm3HeIQGLKjdc5K4CkWsMIlLJ5ViqauenXPVNBM=
+			/FHXLiUORZI67iCRB1ZsXn5UqjKmJbANFsb/GjK6c4U=
 			</data>
 		</dict>
 		<key>ROKOShare.storyboardc/Info.plist</key>
@@ -1302,22 +1302,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6xdfJATnWuCiTLG9kJQn5YcClOM=
+			QNsOBeNg+fkvHGvokerkRuzugsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			BgHomYYXN2gx9gwexBifhTzP4rwVIYLBrmd3IVGQPGw=
+			0f9QsCxmwpxKy81zoi744ONbS3/QghEu8VtG29088M4=
 			</data>
 		</dict>
 		<key>ROKOShare.storyboardc/ROKOShareViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9ACtXSCHrtHa7bs+Ua81vxn3fjE=
+			JvHVrMRhI7DPo736VRFNsePQVHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ouT1pUfMDrsT/l7bxHQMNb5+EnF2EMC5llrI4ZFqkBA=
+			UhzsCBvLbHHY9IBuBtvO5G+eS0ehzR47INRCFoZ0x8w=
 			</data>
 		</dict>
 		<key>camera@2x.png</key>

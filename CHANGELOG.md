@@ -1,3 +1,8 @@
+## Version 1.3
+- _ROKO.Share.Shared event contains contentURL parameter now
+- Bug fixed: HTML email looks bad if sharing text contains full HTML format and not empty portal greeting/signature
+- Bug fixed: Events sending may be delayed in some cases
+
 ## Version 1.2
 - ROKOLinkManager now supports links with parameters
 - Share UI looks better with horizontal-oriented images
