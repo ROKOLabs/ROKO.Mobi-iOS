@@ -9,10 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "ROKOComponent.h"
 
+/**
+ *  Allows developer to send analytic events
+ */
 @interface ROKOLogger : ROKOComponent
 
-@property (nonatomic, assign) NSInteger userId;
-
+/**
+ *  Singleton ROKOLogger object
+ *
+ *  @return Default logger linked to default component manager
+ */
 + (ROKOLogger *)sharedLogger;
 
 /**
@@ -22,8 +28,5 @@
  *  @param eventParameters Optional parameters for the event. Can be nill.
  */
 - (void)addEvent:(NSString *)eventTitle withParameters:(NSDictionary *)eventParameters;
-
-@property (nonatomic, strong) NSUUID *sessionId;
-@property (nonatomic, strong) NSUUID *deviceId;
 
 @end

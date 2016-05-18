@@ -11,7 +11,7 @@
 /**
  *  Describes referral discount
  */
-@interface ROKOReferralDiscountInfo : NSObject
+@interface ROKOReferralDiscountInfo : NSObject <NSCoding>
 
 /**
  *  Indicates whether the discount applying is possible

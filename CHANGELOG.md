@@ -1,3 +1,9 @@
+## Version 1.4
+- New portal error handling
+- New property in ROKOShare component: linkId
+- Bug fixed: Sharing from Overlay does not work
+- Bug fixed: Two deep links are shown when I share referral code via email right after I shared it via FB.
+
 ## Version 1.3
 - _ROKO.Share.Shared event contains contentURL parameter now
 - Bug fixed: HTML email looks bad if sharing text contains full HTML format and not empty portal greeting/signature

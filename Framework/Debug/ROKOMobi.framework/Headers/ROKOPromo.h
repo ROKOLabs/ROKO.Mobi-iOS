@@ -73,6 +73,4 @@ typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem * _Nullabl
 - (void)promoClosed;
 - (void)promoSaved;
 
-- (void)promoNotificationOpenedWithPromoCampaign:(NSInteger)promoCampaign;
-
 @end
