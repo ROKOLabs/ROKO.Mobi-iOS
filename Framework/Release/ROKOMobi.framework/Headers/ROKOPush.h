@@ -43,6 +43,8 @@
  */
 - (void)removeRegistrationWithCompletion:(ROKOHTTPClientCompletion)completion;
 
+- (NSString *)promoCodeFromNotification:(NSDictionary *)notification;
+
 - (void)showOverlayWithId:(NSInteger)overlayId;
 
 - (void)showPromoCampaignWithId:(NSInteger)campaignId;

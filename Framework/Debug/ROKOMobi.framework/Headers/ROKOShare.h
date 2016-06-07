@@ -193,7 +193,7 @@
  *
  *  @param channelType Share channel
  * 
- *  @return Method returns error is contentId field is not set. Event can not be sent in this case
+ *  @return Method returns error if contentId field is not set. Event can not be sent in this case
  */
 - (NSError *)shareCompleteForChannel:(ROKOShareChannelType)channelType;
 

@@ -1,3 +1,8 @@
+## Version 1.5
+- Debug messages in log. Use the following keys in run parameters: -ROKOAPIErrorsDebugEnabled, -ROKOAnalyticsDebugEnabled, -ROKODebugEnabled
+- New error type for incorrect deep link
+- Optimized images loading for ROKOShare screens
+
 ## Version 1.4
 - New portal error handling
 - New property in ROKOShare component: linkId
