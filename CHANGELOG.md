@@ -1,3 +1,6 @@
+## Version 1.6
+- Some old methods were marked as deprecated 
+
 ## Version 1.5
 - Debug messages in log. Use the following keys in run parameters: -ROKOAPIErrorsDebugEnabled, -ROKOAnalyticsDebugEnabled, -ROKODebugEnabled
 - New error type for incorrect deep link

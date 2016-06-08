@@ -43,6 +43,13 @@
  */
 - (void)removeRegistrationWithCompletion:(ROKOHTTPClientCompletion)completion;
 
+/**
+ *  Analyzes push notification and returns promo code in case if the notification is promo
+ *
+ *  @param notification JSON
+ *
+ *  @return Promo code or nil
+ */
 - (NSString *)promoCodeFromNotification:(NSDictionary *)notification;
 
 - (void)showOverlayWithId:(NSInteger)overlayId;

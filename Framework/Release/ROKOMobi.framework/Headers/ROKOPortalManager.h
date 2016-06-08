@@ -52,6 +52,9 @@ typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullabl
  */
 - (void)loginWithUser:(nonnull NSString *)name andPassword:(nonnull NSString *)password completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
+- (void)setUserWithName:(nonnull NSString *)userName referralCode:(nullable NSString *)code linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock
+DEPRECATED_MSG_ATTRIBUTE("Please use setUserWithName:referralCode:promoCode:linkShareChannel:completionBlock: instead.");
+
 /**
  *  Attempts to login as a referral user
  *
@@ -70,6 +73,9 @@ typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullabl
  */
 - (void)logoutWithCompletionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 - (void)getApplicationsUsingEmail:(nonnull NSString *)email completionBlock:(nullable ROKOPortalRequestApplicationsCompletionBlock)completionBlock;
+
+- (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock
+DEPRECATED_MSG_ATTRIBUTE("Please use signupUser:email:andPassword:referralCode:promoCode:linkShareChannel:completionBlock: instead.");
 
 /**
  *  Registers new portal user
