@@ -52,19 +52,15 @@ typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullabl
  */
 - (void)loginWithUser:(nonnull NSString *)name andPassword:(nonnull NSString *)password completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
-- (void)setUserWithName:(nonnull NSString *)userName referralCode:(nullable NSString *)code linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock
-DEPRECATED_MSG_ATTRIBUTE("Please use setUserWithName:referralCode:promoCode:linkShareChannel:completionBlock: instead.");
-
 /**
  *  Attempts to login as a referral user
  *
  *  @param userName        User name
- *  @param referralСode    Referral code (if necessary)
- *  @param promoСode       Promo code (if necessary)
+ *  @param code            Referral code (if necessary)
  *  @param shareChannel    Use this parameter to specify share channel in case if user signs up via deep link
  *  @param completionBlock Completion block. Called both for successfull and error result.
  */
-- (void)setUserWithName:(nonnull NSString *)userName referralCode:(nullable NSString *)referralСode promoCode:(nullable NSString *)promoСode linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)setUserWithName:(nonnull NSString *)userName referralCode:(nullable NSString *)code linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 /**
  *  Logs out from portal
@@ -74,21 +70,17 @@ DEPRECATED_MSG_ATTRIBUTE("Please use setUserWithName:referralCode:promoCode:link
 - (void)logoutWithCompletionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 - (void)getApplicationsUsingEmail:(nonnull NSString *)email completionBlock:(nullable ROKOPortalRequestApplicationsCompletionBlock)completionBlock;
 
-- (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock
-DEPRECATED_MSG_ATTRIBUTE("Please use signupUser:email:andPassword:referralCode:promoCode:linkShareChannel:completionBlock: instead.");
-
 /**
  *  Registers new portal user
  *
  *  @param name            User name
  *  @param email           User e-mail address
  *  @param password        User password
- *  @param referralCode    Referral code
- *  @param promoCode       Promo code
+ *  @param ambassadorCode  Referral code
  *  @param shareChannel    Use this parameter to specify share channel in case if user signs up via deep link
  *  @param completionBlock Completion block. Called when server response is received. Contains error description in case of fail
  */
-- (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password referralCode:(nullable NSString *)referralCode promoCode:(nullable NSString *)promoCode linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)signupUser:(nonnull NSString *)name email:(nonnull NSString *)email andPassword:(nonnull NSString *)password ambassadorCode:(nullable NSString *)ambassadorCode linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 /**
  *  Loads information about portal application
