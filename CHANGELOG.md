@@ -1,5 +1,6 @@
-## Version 1.7
- 
+## Version 1.8
+- Updates in analytics
+- Stability improvements in Deep Link component
 
 ## Version 1.5
 - Debug messages in log. Use the following keys in run parameters: -ROKOAPIErrorsDebugEnabled, -ROKOAnalyticsDebugEnabled, -ROKODebugEnabled

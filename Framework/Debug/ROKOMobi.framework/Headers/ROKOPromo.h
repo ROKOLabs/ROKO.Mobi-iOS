@@ -69,8 +69,8 @@ typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem * _Nullabl
 - (void)promoSentForPromoCampaign:(NSInteger)promoCampaign
                     withPromoCode:(nonnull NSString *)promoCode
                 isInitiatedByPush:(BOOL)isInitiatedByPush;
-- (void)promoOpenedForPromoCampaign:(NSInteger)promoCampaign;
-- (void)promoClosed;
+- (void)promoOpenedForPromoCampaign:(NSInteger)promoCampaignId;
+- (void)promoClosedForPromoCampaign:(NSInteger)promoCampaignId;
 - (void)promoSaved;
 
 @end
