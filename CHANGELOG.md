@@ -1,3 +1,8 @@
+## Version 1.8.1
+- Bug fixed: Invite Friends. Some contacts are absent
+- Bug fixed: Crash on push notification with incorrect data.
+- Improvement of deep links for iOS 8.4
+
 ## Version 1.8
 - Updates in analytics
 - Stability improvements in Deep Link component
