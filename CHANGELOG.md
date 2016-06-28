@@ -1,4 +1,5 @@
 ## Version 1.8.1
+- Support of CocoaPods 1.0
 - Bug fixed: Invite Friends. Some contacts are absent
 - Bug fixed: Crash on push notification with incorrect data.
 - Improvement of deep links for iOS 8.4
