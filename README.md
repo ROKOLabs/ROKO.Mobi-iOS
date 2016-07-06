@@ -43,7 +43,8 @@ There are two ways to configure Xcode project: manual and via CocoaPods.
 #### CocoaPods
 Add the following line to your pod file:
 ```
-pod 'ROKO.Mobi'
+pod 'ROKO.Mobi.Debug', :configurations => ['Debug']
+pod 'ROKO.Mobi', :configurations => ['Release']
 ```
 and run 
 ```
