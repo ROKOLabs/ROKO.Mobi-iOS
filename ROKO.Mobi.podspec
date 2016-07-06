@@ -13,8 +13,8 @@ The ROKO.Mobi SDK provides a means for taking photos, dressing them up in sticke
   s.social_media_url = 'https://twitter.com/rokolabs'
   s.platform         = :ios, '8.0'
   s.requires_arc     = true
-  s.ios.vendored_frameworks = 'Framework/ROKOMobi.framework'
-  s.ios.resource            = 'Framework/ROKOMobi.framework'
+  s.ios.vendored_frameworks = 'Framework/Release/ROKOMobi.framework'
+  s.ios.resource            = 'Framework/Release/ROKOMobi.framework'
   s.xcconfig = {
     :"OTHER_LDFLAGS" => "$(inherited) -ObjC"
   }
