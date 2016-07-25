@@ -1,3 +1,6 @@
+## Version 1.8.3
+- Bug fixed: iOS 8.x. Closing cross icon is absent on promo in-app
+
 ## Version 1.8.1
 - Support of CocoaPods 1.0
 - Bug fixed: Invite Friends. Some contacts are absent
