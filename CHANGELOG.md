@@ -1,3 +1,7 @@
+## Version 1.8.4
+- Bug fixed: Sharing screen may crash when loads large images on slow connection
+- Contacts picker now sorts contacts by display name
+
 ## Version 1.8.3
 - Bug fixed: iOS 8.x. Closing cross icon is absent on promo in-app
 
