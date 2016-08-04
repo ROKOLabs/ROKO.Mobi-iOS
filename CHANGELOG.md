@@ -1,3 +1,6 @@
+## Version 1.8.5
+- Bug fixed: Contacts list shows empty rows for contacts without first and last names
+
 ## Version 1.8.4
 - Bug fixed: Sharing screen may crash when loads large images on slow connection
 - Contacts picker now sorts contacts by display name

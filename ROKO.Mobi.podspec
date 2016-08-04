@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ROKO.Mobi"
-  s.version          = "1.8.4"
+  s.version          = "1.8.5"
   s.license          = 'MPL'
   s.homepage         = "https://github.com/ROKOLabs/ROKO.Mobi.iOS"
   s.author           = "ROKO Labs"
