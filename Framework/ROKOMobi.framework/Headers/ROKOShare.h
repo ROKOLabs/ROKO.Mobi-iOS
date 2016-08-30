@@ -171,21 +171,10 @@
  */
 - (void)loadSchemeFromPortal;
 
-/**
- *  Adds a block that will be called on share process is completed
- *
- *  @param completionBlock Block to be added
- */
 - (void)addShareCompletionBlock:(void (^)(ROKOShareChannelType type, ROKOSharingResult result))completionBlock;
 
-/**
- *  Sends analytic event about opening share view
- */
 - (void)shareBegin;
 
-/**
- *  Sends analytic event about share view is closed
- */
 - (void)shareClose;
 
 /**
@@ -197,14 +186,6 @@
  */
 - (NSError *)shareCompleteForChannel:(ROKOShareChannelType)channelType;
 
-/**
- *  Sends analytic event about successfull finish of link sharing
- *
- *  @param linkId      Shared link id
- *  @param channelType Share channel
- *
- *  @note This method is deprecated and will be removed soon. Please set linkId property and use shareCompleteForChannel: method instead
- */
 - (void)shareOfLinkWithId:(NSNumber *)linkId completeForChannel:(ROKOShareChannelType)channelType DEPRECATED_ATTRIBUTE;
 
 /**

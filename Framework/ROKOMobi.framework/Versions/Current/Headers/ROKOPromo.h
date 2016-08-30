@@ -8,6 +8,7 @@
 
 #import "ROKOComponent.h"
 #import "ROKOPromoDiscountItem.h"
+#import "ROKOPromoCodeListItem.h"
 
 /**
  *  Possible delivery ways for promo code
@@ -35,6 +36,8 @@ typedef NS_ENUM(NSInteger, ROKOPromoDeliveryType) {
 	ROKOPromoDeliveryTypeLink
 };
 
+typedef void(^ROKOPromoCodeListCompletionBlock)(NSArray <ROKOPromoCodeListItem *> * _Nullable promoCodes, NSError * _Nullable error);
+
 typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem * _Nullable discount, NSError * _Nullable error);
 
 /**
@@ -49,6 +52,13 @@ typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem * _Nullabl
  *  @param completionBlock Block that will be called when request is completed. Block definition: void(ROKOPromoDiscountItem *discount, NSError *error)
  */
 - (void)loadPromoDiscountWithPromoCode:(nonnull NSString *)promoCode completionBlock:(nonnull ROKOPromoDiscountCompletionBlock)completionBlock;
+
+/**
+ *  Loads all valid promo codes avaliable for the current user
+ *
+ *  @param completionBlock completion block to be called on finish
+ */
+- (void)loadUserPromoCodesWithCompletionBlock:(nonnull ROKOPromoCodeListCompletionBlock)completionBlock;
 
 /**
  *  Marks promo code as used by the current user.

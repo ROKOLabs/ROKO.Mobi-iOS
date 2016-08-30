@@ -1,3 +1,7 @@
+## Version 1.8.6
+- Modular framework. In Swift you may use import keyword instead of Objective-C bridge file
+- Ability to get all promo codes user can use
+
 ## Version 1.8.5
 - Bug fixed: Contacts list shows empty rows for contacts without first and last names
 

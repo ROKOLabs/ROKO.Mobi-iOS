@@ -42,37 +42,37 @@ typedef NS_ENUM(NSInteger, ROKOLinkType) {
 /**
  *  Name of the link
  */
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy, nullable) NSString *name;
 
 /**
  *  Advanced settings of the link. Come from portal.
  */
-@property (nonatomic, strong) NSDictionary *settings;
+@property (nonatomic, strong, nullable) NSDictionary *settings;
 
 /**
  *  Date when the link was created
  */
-@property (nonatomic, strong) NSDate *createDate;
+@property (nonatomic, strong, nullable) NSDate *createDate;
 
 /**
  *  Date when the link was updated on Portal
  */
-@property (nonatomic, strong) NSDate *updateDate;
+@property (nonatomic, strong, nullable) NSDate *updateDate;
 
 /**
  *  Share channel name
  */
-@property (nonatomic, copy) NSString *shareChannel;
+@property (nonatomic, copy, nullable) NSString *shareChannel;
 
 /**
  *  Meaningful part of the link url (after domain)
  */
-@property (nonatomic, copy) NSString *vanityLink;
+@property (nonatomic, copy, nullable) NSString *vanityLink;
 
 /**
  *  Link with custom domain. For example, yourapp://link
  */
-@property (nonatomic, copy) NSString *customDomainLink;
+@property (nonatomic, copy, nullable) NSString *customDomainLink;
 
 /**
  *  Type of the link
@@ -82,11 +82,11 @@ typedef NS_ENUM(NSInteger, ROKOLinkType) {
 /**
  *  Referral code this link is targeted to
  */
-@property (nonatomic, copy) NSString *referralCode;
+@property (nonatomic, copy, nullable) NSString *referralCode;
 
 /**
  *  Promo code this link is targeted to
  */
-@property (nonatomic, copy) NSString *promoCode;
+@property (nonatomic, copy, nullable) NSString *promoCode;
 
 @end
