@@ -1,3 +1,6 @@
+## Version 1.8.7
+- Bug fixed: Contact list is not loaded on very first try
+
 ## Version 1.8.6
 - Modular framework. In Swift you may use import keyword instead of Objective-C bridge file
 - Ability to get all promo codes user can use
