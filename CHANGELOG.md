@@ -1,3 +1,6 @@
+## Version 1.8.8
+- Bug fixed: crash if user restricted access to contacts
+
 ## Version 1.8.7
 - Bug fixed: Contact list is not loaded on very first try
 
