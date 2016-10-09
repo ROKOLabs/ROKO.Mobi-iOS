@@ -76,6 +76,11 @@
 @property (nonatomic, weak) UIViewController *presentingController;
 
 /**
+ Shows if deep link showld be generated on share. Ignored if link is already set
+ */
+@property (nonatomic, assign) BOOL needsDeepLink;
+
+/**
  *  ROKOShareScheme for customizing appearence of view
  */
 @property (strong, nonatomic) ROKOShareScheme *shareScheme;

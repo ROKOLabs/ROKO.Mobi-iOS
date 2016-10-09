@@ -16,51 +16,51 @@
 /**
  *  Date when user signed up
  */
-@property (nonatomic, copy) NSString *createDate;
+@property (nonatomic, copy, nullable) NSString *createDate;
 
 /**
  *  User email
  */
-@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy, nullable) NSString *email;
 
 /**
  *  Date when user log into app at the first time
  */
-@property (nonatomic, copy) NSString *firstLoginTime;
+@property (nonatomic, copy, nullable) NSString *firstLoginTime;
 
 /**
  *  Previous login time
  */
-@property (nonatomic, copy) NSString *lastLoginTime;
+@property (nonatomic, copy, nullable) NSString *lastLoginTime;
 
 /**
  *  Phone number
  */
-@property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy, nullable) NSString *phone;
 
 /**
  *  URL to user avatar
  */
-@property (nonatomic, copy) NSString *photoFile;
+@property (nonatomic, copy, nullable) NSString *photoFile;
 
 /**
  *  Referral code
  */
-@property (nonatomic, copy) NSString *referralCode;
+@property (nonatomic, copy, nullable) NSString *referralCode;
 
 /**
  *  Additional properties that was set to user on the portal
  */
-@property (nonatomic, strong) NSDictionary *systemProperties;
+@property (nonatomic, strong, nullable) NSDictionary *systemProperties;
 
 /**
  *  Date when user data was updated
  */
-@property (nonatomic, copy) NSString *updateDate;
+@property (nonatomic, copy, nullable) NSString *updateDate;
 
 /**
  *  Login name
  */
-@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy, nullable) NSString *username;
 
 @end

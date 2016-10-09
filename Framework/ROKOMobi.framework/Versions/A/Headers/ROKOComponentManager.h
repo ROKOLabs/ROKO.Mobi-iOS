@@ -120,10 +120,17 @@ typedef void (^ROKOComponentManagerCompletion)(ROKOStatusCode statusCode, NSErro
 - (void)checkApiTokenWithCompletion:(ROKOComponentManagerCompletion)completion;
 
 /**
- *  Notify developer to open page
+ *  Notify application to open page
  *
  *  @param linkTarget Describes page
  */
 - (void)notififyDeveloperToOpenPage:(NSString*)linkTarget;
+
+/**
+ Notify appplication to open page. Notification name is stores in kROKOPushPageNotification constant.
+
+ @param parameters Parameters to be stored in userInfo property of the sending notification
+ */
++ (void)notifyDeveloperToOpenPageWithParameters:(NSDictionary *)parameters;
 
 @end

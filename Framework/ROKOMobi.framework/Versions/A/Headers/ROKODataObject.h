@@ -41,4 +41,6 @@
  */
 - (void)loadFromDictionary:(NSDictionary *)dictionary;
 
+- (NSDictionary *)dictionary;
+
 @end

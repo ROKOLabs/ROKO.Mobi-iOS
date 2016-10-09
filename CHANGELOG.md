@@ -1,3 +1,6 @@
+## Version 1.8.9
+- Ability to change user custom properties
+
 ## Version 1.8.8
 - Bug fixed: crash if user restricted access to contacts
 
