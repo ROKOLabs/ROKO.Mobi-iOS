@@ -17,7 +17,6 @@ FOUNDATION_EXPORT const unsigned char ROKOMobiVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <ROKOMobi/PublicHeader.h>
 
 
-#import <ROKOMobi/ROKOStickers.h>
 #import <ROKOMobi/ROKOShare.h>
 #import <ROKOMobi/ROKOLogger.h>
 #import <ROKOMobi/ROKOPush.h>
@@ -28,3 +27,23 @@ FOUNDATION_EXPORT const unsigned char ROKOMobiVersionString[];
 #import <ROKOMobi/ROKOInviteFriendsViewController.h>
 #import <ROKOMobi/ROKOInviteCustomizer.h>
 #import <ROKOMobi/ROKOInstaBot.h>
+
+
+// Stickers headers
+#import <ROKOMobi/ROKOStickers.h>
+#import <ROKOMobi/RLPhotoComposerController.h>
+#import <ROKOMobi/RLPhotoComposerDataSource.h>
+#import <ROKOMobi/RLPhotoComposerDelegate.h>
+#import <ROKOMobi/RLStickerPackInfo.h>
+#import <ROKOMobi/RLStickerInfo.h>
+#import <ROKOMobi/RLWatermarkInfo.h>
+#import <ROKOMobi/RLComposerWorkflowController.h>
+#import <ROKOMobi/ROKOStickersScheme.h>
+#import <ROKOMobi/ROKOPortalStickersDataSource.h>
+#import <ROKOMobi/ROKOSticker.h>
+#import <ROKOMobi/ROKOStickerPack.h>
+#import <ROKOMobi/RLImageCaptureViewController.h>
+#import <ROKOMobi/RLStickersPanel.h>
+#import <ROKOMobi/RLStickerPacksPanel.h>
+#import <ROKOMobi/ROKOStickersCustomizer.h>
+#import <ROKOMobi/ROKOStickersEventItem.h>

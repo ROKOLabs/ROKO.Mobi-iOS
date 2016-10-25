@@ -17,18 +17,17 @@ FOUNDATION_EXPORT const unsigned char ROKOStickersVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h>
 
 #import <Foundation/Foundation.h>
-#import "RLPhotoComposerController.h"
-#import "RLPhotoComposerDataSource.h"
-#import "RLPhotoComposerDelegate.h"
-#import "RLStickerPackInfo.h"
-#import "RLStickerInfo.h"
-#import "RLWatermarkInfo.h"
-#import "RLComposerWorkflowController.h"
-#import "ROKOStickersScheme.h"
-#import "ROKOPortalStickersDataSource.h"
-#import "ROKOSticker.h"
-#import "ROKOStickerPack.h"
-#import "RLImageCaptureViewController.h"
-#import "RLStickersPanel.h"
-#import "RLStickerPacksPanel.h"
-#import "ROKOStickersCustomizer.h"
+
+@class RLStickerInfo;
+@class RLStickerPackInfo;
+@class ROKOStickersEventItem;
+
+@interface ROKOStickers : NSObject
+
++ (void)logStickerSelection:(RLStickerInfo *)sticker inPack:(RLStickerPackInfo *)pack withImageId:(NSString *)imageId;
++ (void)logSavingWithStickers:(NSArray <ROKOStickersEventItem *> *)stickers onImageWithId:(NSString *)imageId;
++ (void)logEnteredStickersPanel;
++ (void)logExitedStickersPanel;
++ (void)logSharedImageWithId:(NSString *)imageId;
+
+@end

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 ROKO Labs. All rights reserved.
 //
 
-#import "ROKODataObject.h"
+#import "ROKOUserIcon.h"
 
 /**
  *  Stores information about ROKO Portal user
@@ -39,9 +39,9 @@
 @property (nonatomic, copy, nullable) NSString *phone;
 
 /**
- *  URL to user avatar
+ *  User avatar image object
  */
-@property (nonatomic, copy, nullable) NSString *photoFile;
+@property (nonatomic, strong, nullable) ROKOUserIcon *photoFile;
 
 /**
  *  Referral code

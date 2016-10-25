@@ -1,3 +1,6 @@
+## Version 1.9.0
+- New component: InstaBot
+
 ## Version 1.8.9
 - Ability to change user custom properties
 

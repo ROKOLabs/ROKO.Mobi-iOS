@@ -11,7 +11,7 @@
 
 @interface ROKOInstaBotScheme : ROKOComponentScheme
 
-@property (nonatomic, assign) BOOL useProductIcon;
+@property (nonatomic, assign) BOOL useChatIcon;
 @property (nonatomic, copy) NSString *closeButtonText;
 @property (nonatomic, strong) UIColor *closeButtonTextColor;
 @property (nonatomic, strong) UIColor *botDialogueColor;
