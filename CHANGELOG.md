@@ -1,3 +1,6 @@
+## Version 1.9.1
+- Minor UI fixes in InstaBot
+
 ## Version 1.9.0
 - New component: InstaBot
 
