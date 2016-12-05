@@ -1,3 +1,6 @@
+## Version 1.9.2
+- Auto prolonged server session
+
 ## Version 1.9.1
 - Minor UI fixes in InstaBot
 

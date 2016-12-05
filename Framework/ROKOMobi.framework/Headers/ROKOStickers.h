@@ -25,7 +25,7 @@ FOUNDATION_EXPORT const unsigned char ROKOStickersVersionString[];
 @interface ROKOStickers : NSObject
 
 + (void)logStickerSelection:(RLStickerInfo *)sticker inPack:(RLStickerPackInfo *)pack withImageId:(NSString *)imageId;
-+ (void)logSavingWithStickers:(NSArray <ROKOStickersEventItem *> *)stickers onImageWithId:(NSString *)imageId;
++ (void)logSavingWithStickers:(NSArray <ROKOStickersEventItem *> *)stickers onImageWithId:(NSString *)imageId fromCamera:(BOOL)fromCamera;
 + (void)logEnteredStickersPanel;
 + (void)logExitedStickersPanel;
 + (void)logSharedImageWithId:(NSString *)imageId;
