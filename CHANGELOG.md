@@ -1,3 +1,6 @@
+## Version 1.9.3
+- Bug fixed: unable to set custom property for user without avatar
+
 ## Version 1.9.2
 - Auto prolonged server session
 
