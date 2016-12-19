@@ -1,3 +1,8 @@
+## Version 1.9.4
+- Instabot. Long user answers support
+- Improvements and stabilization of Instabot component
+- Instabot. Conversations caching
+
 ## Version 1.9.3
 - Bug fixed: unable to set custom property for user without avatar
 

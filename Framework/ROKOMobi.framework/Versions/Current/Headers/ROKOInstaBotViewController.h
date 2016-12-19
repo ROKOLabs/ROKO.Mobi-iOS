@@ -14,4 +14,6 @@
 
 + (instancetype)buildControllerWithBot:(ROKOInstaBot *)bot;
 
+- (void)showAsOverlay;
+
 @end
