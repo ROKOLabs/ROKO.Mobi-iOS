@@ -13,9 +13,11 @@
 @class ROKOPortalManager;
 @class ROKOPortalInfo;
 @class ROKOSessionInfo;
+@class ROKOReferralDiscountItem;
 
 typedef void(^ROKOPortalRequestCompletionBlock)(NSError * __nullable error);
 typedef void(^ROKOPortalRequestApplicationsCompletionBlock)(NSArray * __nullable applications, NSError * __nullable error);
+typedef void(^ROKOPortalRequestReferralRewardListCompletionBlock)(NSArray <ROKOReferralDiscountItem *>* __nullable rewards, NSError * __nullable error);
 typedef void(^ROKOPortalInfoRequestCompletionBlock)(ROKOPortalInfo * __nullable info, NSError *__nullable error);
 typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullable info, NSError *__nullable error);
 
@@ -48,7 +50,7 @@ typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullabl
  *
  *  @param name            user name
  *  @param password        user password
- *  @param completionBlock Completion block. Called both for successfull and error result.
+ *  @param completionBlock Completion block. Called both for successful and error result.
  */
 - (void)loginWithUser:(nonnull NSString *)name andPassword:(nonnull NSString *)password completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
@@ -58,14 +60,14 @@ typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullabl
  *  @param userName        User name
  *  @param code            Referral code (if necessary)
  *  @param shareChannel    Use this parameter to specify share channel in case if user signs up via deep link
- *  @param completionBlock Completion block. Called both for successfull and error result.
+ *  @param completionBlock Completion block. Called both for successful and error result.
  */
 - (void)setUserWithName:(nonnull NSString *)userName referralCode:(nullable NSString *)code linkShareChannel:(nullable NSString *)shareChannel completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 /**
  *  Logs out from portal
  *
- *  @param completionBlock Calles on response received
+ *  @param completionBlock Calls on response received
  */
 - (void)logoutWithCompletionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 - (void)getApplicationsUsingEmail:(nonnull NSString *)email completionBlock:(nullable ROKOPortalRequestApplicationsCompletionBlock)completionBlock;

@@ -76,4 +76,13 @@
  */
 - (void)composer:(RLPhotoComposerController *)composer willApplyUIScheme:(ROKOComponentScheme *)scheme;
 
+/**
+ *  Calls by composer to save image
+ *
+ *  @param composer Customizing composer
+ *  @image Image to save
+ *  @param albumName Name of album to save the image
+ */
+- (void)composer:(RLPhotoComposerController *)composer shoudlSaveImage:(UIImage *)image toAlbumWithName:(NSString *)albumName;
+
 @end

@@ -37,13 +37,13 @@ FOUNDATION_EXPORT const unsigned char ROKOMobiVersionString[];
 #import <ROKOMobi/RLStickerPackInfo.h>
 #import <ROKOMobi/RLStickerInfo.h>
 #import <ROKOMobi/RLWatermarkInfo.h>
-#import <ROKOMobi/RLComposerWorkflowController.h>
 #import <ROKOMobi/ROKOStickersScheme.h>
 #import <ROKOMobi/ROKOPortalStickersDataSource.h>
 #import <ROKOMobi/ROKOSticker.h>
 #import <ROKOMobi/ROKOStickerPack.h>
-#import <ROKOMobi/RLImageCaptureViewController.h>
 #import <ROKOMobi/RLStickersPanel.h>
 #import <ROKOMobi/RLStickerPacksPanel.h>
 #import <ROKOMobi/ROKOStickersCustomizer.h>
 #import <ROKOMobi/ROKOStickersEventItem.h>
+#import <ROKOMobi/RLPhotoStickersViewController.h>
+#import <ROKOMobi/RLImagesCache.h>

@@ -1,3 +1,6 @@
+## Version 1.9.5
+- New referral workflow
+
 ## Version 1.9.4
 - Instabot. Long user answers support
 - Improvements and stabilization of Instabot component

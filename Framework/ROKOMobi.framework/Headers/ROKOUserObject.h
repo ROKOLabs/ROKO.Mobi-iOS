@@ -7,6 +7,7 @@
 //
 
 #import "ROKOUserIcon.h"
+#import "ROKOReferralProgram.h"
 
 /**
  *  Stores information about ROKO Portal user
@@ -62,5 +63,10 @@
  *  Login name
  */
 @property (nonatomic, copy, nullable) NSString *username;
+
+/**
+ *  Referral Program Info
+ */
+@property (nonatomic, strong, nullable) ROKOReferralProgram *referralProgram;
 
 @end

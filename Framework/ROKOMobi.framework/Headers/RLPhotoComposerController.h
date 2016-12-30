@@ -16,6 +16,11 @@ typedef NS_ENUM (NSInteger, RLPackButtonMode) {
 	RLPackButtonModeEllipse
 };
 
+typedef NS_ENUM(NSInteger, ROKOPhotoType) {
+	ROKOPhotoTypeCamera,
+	ROKOPhotoTypePhotoPicker
+};
+
 @class ROKOComponentCustomizer;
 
 @interface RLPhotoComposerController : UIViewController
@@ -28,6 +33,7 @@ typedef NS_ENUM (NSInteger, RLPackButtonMode) {
 @property (nonatomic, strong) NSUUID *photoId;
 
 @property (strong, nonatomic) UIImage *photo;
+@property (nonatomic, assign) ROKOPhotoType photoType;
 @property (nonatomic, assign, readonly) BOOL savePhotosToCameraRoll;
 
 @property (nonatomic, strong) ROKOComponentScheme *scheme;

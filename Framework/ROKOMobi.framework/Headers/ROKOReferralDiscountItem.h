@@ -23,4 +23,9 @@
  */
 @property (nonatomic, strong) NSDate *updateDate;
 
+/**
+ *  Indicates whether the discount is active
+ */
+@property (nonatomic, assign) BOOL isActive;
+
 @end

@@ -9,6 +9,7 @@
 #import "ROKOComponent.h"
 #import "ROKOPromoDiscountItem.h"
 #import "ROKOPromoCodeListItem.h"
+#import "ROKOPromoCampaignInfo.h"
 
 /**
  *  Possible delivery ways for promo code
@@ -39,6 +40,7 @@ typedef NS_ENUM(NSInteger, ROKOPromoDeliveryType) {
 typedef void(^ROKOPromoCodeListCompletionBlock)(NSArray <ROKOPromoCodeListItem *> * _Nullable promoCodes, NSError * _Nullable error);
 
 typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem * _Nullable discount, NSError * _Nullable error);
+typedef void(^ROKOPromoCampaignInfoCompletionBlock)(ROKOPromoCampaignInfo * _Nullable info, NSError * _Nullable error);
 
 /**
  *  Helps to handle promo codes and campaigns
@@ -70,17 +72,24 @@ typedef void(^ROKOPromoDiscountCompletionBlock)(ROKOPromoDiscountItem * _Nullabl
  *  @param completionBlock Block to be called on request is finished. Format: void(NSError *error)
  */
 - (void)markPromoCodeAsUsed:(nonnull NSString *)promoCode
-            valueOfPurchase:(nullable NSNumber *)valueOfPurchase
-            valueOfDiscount:(nullable NSNumber *)valueOfDiscount
-               deliveryType:(ROKOPromoDeliveryType)deliveryType
-            completionBlock:(nullable ROKOMarkDiscountCompletionBlock)completionBlock;
+			valueOfPurchase:(nullable NSNumber *)valueOfPurchase
+			valueOfDiscount:(nullable NSNumber *)valueOfDiscount
+			   deliveryType:(ROKOPromoDeliveryType)deliveryType
+			completionBlock:(nullable ROKOMarkDiscountCompletionBlock)completionBlock;
 
 // Analytics methods
 - (void)promoSentForPromoCampaign:(NSInteger)promoCampaign
-                    withPromoCode:(nonnull NSString *)promoCode
-                isInitiatedByPush:(BOOL)isInitiatedByPush;
+					withPromoCode:(nonnull NSString *)promoCode
+				isInitiatedByPush:(BOOL)isInitiatedByPush;
 - (void)promoOpenedForPromoCampaign:(NSInteger)promoCampaignId;
 - (void)promoClosedForPromoCampaign:(NSInteger)promoCampaignId;
 - (void)promoSaved;
 
+/**
+ *  Receives information about promo campaign
+ *
+ *  @param promoCampaign   Promo campaign identifier
+ *  @param completionBlock Block that will be called when request is completed. Block definition: void(ROKOPromoCampaignInfo *info, NSError *error)
+ */
+- (void)loadPromoCampaignInfo:(NSInteger)promoCampaign completionBlock:(nonnull ROKOPromoCampaignInfoCompletionBlock)completionBlock;
 @end

@@ -183,7 +183,7 @@
 - (void)shareClose;
 
 /**
- *  Sends analytic event about successfull finish of sharing process
+ *  Sends analytic event about successful finish of sharing process
  *
  *  @param channelType Share channel
  * 
@@ -194,7 +194,7 @@
 - (void)shareOfLinkWithId:(NSNumber *)linkId completeForChannel:(ROKOShareChannelType)channelType DEPRECATED_ATTRIBUTE;
 
 /**
- *  Sends analytic event about successfull finish of promo code sharing
+ *  Sends analytic event about successful finish of promo code sharing
  *
  *  @param channelType Share channel
  */

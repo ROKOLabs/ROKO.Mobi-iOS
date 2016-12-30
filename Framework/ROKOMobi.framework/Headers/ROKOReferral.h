@@ -9,6 +9,10 @@
 #import "ROKOComponent.h"
 #import "ROKOReferralDiscountItem.h"
 #import "ROKOReferralCampaignInfo.h"
+#import "ROKOReferralDefinition.h"
+#import "ROKOReferralProgramDefinition.h"
+#import "ROKOReferralProgram.h"
+#import "ROKOPortalManager.h"
 
 /**
  *  Completion block for loadDiscountInfoWithCode:completionBlock: method
@@ -22,7 +26,7 @@ typedef void (^ROKOReferralDiscountInfoResponseBlock)(ROKOReferralCampaignInfo *
  *  Completion block for activateDiscountWithCode request
  *
  *  @param discountId id of the discount object
- *  @param error      Error description. Contains nil in case of successfull request
+ *  @param error      Error description. Contains nil in case of successful request
  */
 typedef void (^ROKOReferralActivateDiscountResponseBlock)(NSNumber * _Nullable discountId, NSError * _Nullable error);
 
@@ -72,4 +76,60 @@ typedef void (^ROKOReferralCompleteDiscountResponseBlock)(NSNumber * _Nullable d
  */
 - (void)completeDiscountWithCode:(nonnull NSString *)code completionBlock:(nullable ROKOReferralCompleteDiscountResponseBlock)completionBlock;
 
+/**
+ *  Intended for situation where code needs to be initiated in a middle application's flow, e.g. by user clicking on deep link with code when app is already installed
+ *
+ *  @param code            Referral code
+ *  @param completionBlock Completion block. Called both for successful and error result.
+ */
+- (void)loadInfoForCode:(nonnull NSString *)code completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+
+/**
+ *  Intended for situation where code needs to be initiated in a middle application's flow, e.g. by user clicking on deep link with code when app is already installed. Choose onlyActive and unusedOnly rewards.
+ *
+ *  @param code            Referral code
+ *  @param onlyActive      Selection flag
+ *  @param unusedOnly      Selection flag
+ *  @param completionBlock Completion block. Called both for successful and error result.
+ */
+- (void)loadInfoForCode:(nonnull NSString *)code onlyActive:(BOOL)onlyActive unusedOnly:(BOOL)unusedOnly completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+
+/**
+ *  Call to confirm that code was used in purchase
+ *
+ *  @param issueReward      If Yest - Reward will be issued to Referrer
+ *  @param completionBlock  Completion block. Called both for successful and error result.
+ */
+- (void)redeemReferralDiscount:(BOOL)issueReward completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+
+
+/**
+ *  Called if reward issuance needs to be separated from completion of transaction
+ *
+ *  @param completionBlock  Completion block. Called both for successful and error result.
+ */
+- (void)issueRewardWithcompletionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+
+/**
+ *  Returns the list of rewards. Choose onlyActive and unusedOnly rewards.
+ *
+ *  @param completionBlock  Completion block. Called both for successful and error result.
+ */
+- (void)loadReferralRewardList:(nullable ROKOPortalRequestReferralRewardListCompletionBlock)completionBlock;
+
+/**
+ *  Returns the list of rewards with selection params.
+ *
+ *  @param onlyActive       Selection flag
+ *  @param unusedOnly       Selection flag
+ *  @param completionBlock  Completion block. Called both for successful and error result.
+ */
+- (void)loadReferralRewardList:(BOOL)onlyActive unusedOnly:(BOOL)unusedOnly completionBlock:(nullable ROKOPortalRequestReferralRewardListCompletionBlock)completionBlock;
+
+/**
+ *  Called by Referrer side when it confirms that reward was used successfully
+ *
+ *  @param completionBlock  Completion block. Called both for successful and error result.
+ */
+- (void)redeemReferralReward:(nonnull NSNumber *)objectId completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 @end
