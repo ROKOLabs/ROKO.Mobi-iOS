@@ -1,3 +1,6 @@
+## Version 1.9.6
+- Improvements of referral workflow
+
 ## Version 1.9.5
 - New referral workflow
 

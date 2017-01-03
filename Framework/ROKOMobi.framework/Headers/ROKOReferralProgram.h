@@ -51,4 +51,5 @@
  *  @param dictionary Dictionary with information about the object
  */
 - (void)loadFromDictionary:(nullable NSDictionary *)dictionary;
+
 @end
