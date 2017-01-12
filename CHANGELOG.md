@@ -1,3 +1,6 @@
+## Version 1.9.7
+- Bug fixed: Redeem referral discount workflow corrected
+
 ## Version 1.9.6
 - Improvements of referral workflow
 
