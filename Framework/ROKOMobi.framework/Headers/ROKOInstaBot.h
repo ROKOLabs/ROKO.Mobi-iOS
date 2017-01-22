@@ -30,10 +30,6 @@ typedef void (^ROKOInstaBotLoadCompletionBlock)(ROKOInstaBotViewController * _Nu
 
 - (void)loadConversationWithId:(NSInteger)conversationId completionBlock:(nonnull ROKOInstaBotLoadCompletionBlock)completionBlock;
 
-- (nullable ROKOInstaBotViewController *)showBotWithScheme:(nonnull ROKOInstaBotConversation *)scheme;
-
-+ (void)markSchemeAsShown:(nonnull ROKOInstaBotConversation *)scheme;
-
 /**
  *  Starts conversation from the begining
  *

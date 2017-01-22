@@ -1,3 +1,6 @@
+## Version 1.9.8
+- Instabot can be shown multiply times
+
 ## Version 1.9.7
 - Bug fixed: Redeem referral discount workflow corrected
 
