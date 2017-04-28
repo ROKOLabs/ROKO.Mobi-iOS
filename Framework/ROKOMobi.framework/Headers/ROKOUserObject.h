@@ -69,4 +69,9 @@
  */
 @property (nonatomic, strong, nullable) ROKOReferralProgram *referralProgram;
 
+/**
+ * 	Subscripting
+ */
+- (nullable id)objectForKeyedSubscript:(nonnull NSString *)key;
+- (void)setObject:(nonnull id)obj forKeyedSubscript:(nonnull NSString *)key;
 @end

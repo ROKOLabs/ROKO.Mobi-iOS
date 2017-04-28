@@ -1,3 +1,6 @@
+## Version 1.10
+- Meet Instabot 2.0!
+
 ## Version 1.9.8
 - Instabot can be shown multiply times
 

@@ -38,4 +38,10 @@
  */
 + (void)addEvent:(nonnull NSString *)eventTitle withParameters:(nullable NSDictionary *)eventParameters;
 
+/**
+  Sends analytic event to ROKO Analytics. Stores message in local db if server is not avaliable
+
+  @param eventTitle      Event name
+ */
++ (void)addEvent:(nonnull NSString *)eventTitle;
 @end

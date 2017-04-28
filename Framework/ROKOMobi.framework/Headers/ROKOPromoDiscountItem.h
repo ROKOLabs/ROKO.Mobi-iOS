@@ -54,11 +54,6 @@ typedef NS_ENUM(NSInteger, ROKOPromoDiscountApplicability) {
 @property (nonatomic, assign) BOOL isAlwaysActive;
 
 /**
- *  The promo code can be used just once
- */
-@property (nonatomic, assign) BOOL isSingleUseOnly;
-
-/**
  *  Indicates if the discount should be applied automatically on app start
  */
 @property (nonatomic, assign) BOOL autoApplyOnAppOpen;

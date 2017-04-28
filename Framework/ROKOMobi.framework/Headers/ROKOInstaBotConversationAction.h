@@ -17,6 +17,7 @@ typedef NS_ENUM (NSInteger, ROKOInstaBotConversationActionType) {
 };
 
 @class ROKOInstaBotConversationTreeNode;
+@class ROKOImageDataObject;
 
 @interface ROKOInstaBotConversationAction : ROKODataObject
 
@@ -26,5 +27,7 @@ typedef NS_ENUM (NSInteger, ROKOInstaBotConversationActionType) {
 @property (nonatomic, strong) ROKOInstaBotConversationTreeNode *childNode;
 @property (nonatomic, strong) NSDictionary *pageSettings;
 @property (nonatomic, copy) NSString *url;
+@property (nonatomic, strong) NSString *cardImageURL;
+@property (nonatomic, copy) NSString *cardDescription;
 
 @end
