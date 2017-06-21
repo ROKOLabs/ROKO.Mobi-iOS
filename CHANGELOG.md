@@ -1,3 +1,21 @@
+## Version 1.12.0.0 (June 21, 2017)
+- Updated InstaBot 2.0 UI
+- More polished outlines for multiple choice options and images
+- Standardized InstaBot icons to squares
+- Beautified the layout for the description and selection text for rich media cards 
+- Added grey borders around all images	
+- Descriptions accompanying rich media images will be overlayed on top of image
+
+- **Bug Fixes**
+- Fixed InstaBot multiple choice and attached images rendering on tablets and landscaped devices
+- Fixed issue of the InstaBot launching for more times than configured in the Mobi portal
+- Removed non-blocker error messages for when cacheFile is empty and dataToLoad is nil
+- Fixed incorrect sticker pack appearing and crash when switching between apps
+- Fixed poor UX when keyboard appears for free-text responses
+- Fixed issue of improper phone-number property validation
+- Fixed issue where external URL actions do not open when clicked
+- Fixed issue of InstaBot conversations not scrolling all the way down under certain situations
+
 ## Version 1.10
 - Meet Instabot 2.0!
 
