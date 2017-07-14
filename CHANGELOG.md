@@ -1,3 +1,16 @@
+## Version 1.12.1 (July 14th, 2017)
+#### **Enhancements**
+- InstaBot text prompt nodes now support embedded YouTube videos 
+- Any links detected (eg: www, http://, etc) in an InstaBot nodes are now directly clickable by the user within the InstaBot
+- Added unique ID to each InstaBot conversation to allow for conversation tracking on a _session_ level in the Mobi portal
+- Support added for the setting of Mobi custom properties within an InstaBot conversation for _anonymous_ users
+
+#### **Bug Fixes**
+- An engaged conversation session was being incorrectly listed as "no reply" instead of "engaged"
+- Text keyboard appeared instead of the number keyboard when InstaBot asks for a phone number from the user
+- Text keyboard appeared instead of an email-centric keyboard when InstaBot asks for a email from the user
+- Duplicated InstaBot prompts in certain edge cases
+
 ## Version 1.12.0.0 (June 21, 2017)
 #### **Enhancements**
 - Updated InstaBot 2.0 UI

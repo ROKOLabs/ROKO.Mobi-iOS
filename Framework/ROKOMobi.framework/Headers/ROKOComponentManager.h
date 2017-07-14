@@ -26,6 +26,7 @@ typedef NS_ENUM (NSInteger, ROKOStatusCode) {
     ROKOStatusCodeDeepLinkIncorrectDomainOrScheme,
 	ROKOStatusCodeIncentiveProgramIsNotActive,
 	ROKOStatusCodeDiscountIsNotEnabled,
+	ROKOStatusCodeSessionUuidAlreadyExist,
 	ROKOStatusCodeUnknownError
 };
 
