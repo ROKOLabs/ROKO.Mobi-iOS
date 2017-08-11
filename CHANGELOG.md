@@ -1,3 +1,7 @@
+## Version 1.12.2 (August 11th, 2017)
+#### **Enhancements**
+- Internal refactoring for upcoming new features and performance improvements
+
 ## Version 1.12.1 (July 14th, 2017)
 #### **Enhancements**
 - InstaBot text prompt nodes now support embedded YouTube videos 
