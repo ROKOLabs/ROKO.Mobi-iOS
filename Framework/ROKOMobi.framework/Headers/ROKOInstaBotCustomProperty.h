@@ -25,5 +25,5 @@ typedef  NS_ENUM(NSInteger, ROKOConversationValueFormat) {
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) ROKOConversationFieldType fieldType;
 @property (nonatomic, assign) ROKOConversationValueFormat valueFormat;
-
+@property (nonatomic, assign) BOOL isList;
 @end

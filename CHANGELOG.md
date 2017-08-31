@@ -1,3 +1,13 @@
+## Version 1.12.3 (August 31st, 2017)
+#### **Enhancements**
+- Added a new Instabot user-response type - multi-select
+- Added client-side support for conversations that contain a conversation path that connects to existing nodes in the conversation
+- Added support for full, client-side Instabot-UI customization
+- Added new start method to initialize the Instabot SDK in `didFinishLoadingWithOptions`
+
+#### **Bug Fixes**
+- Fixed issues related to incorrect conversation portal analytics from certain types of Instabot user-responses
+
 ## Version 1.12.2 (August 11th, 2017)
 #### **Enhancements**
 - Internal refactoring for upcoming new features and performance improvements

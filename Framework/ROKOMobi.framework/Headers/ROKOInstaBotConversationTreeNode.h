@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, ROKOConversationTreeNodePromptType) {
 	ROKOConversationTreeNodePromptTypeUndefined,
 	ROKOConversationTreeNodePromptTypeStatement,
 	ROKOConversationTreeNodePromptTypeFreeText,
+	ROKOConversationTreeNodePromptTypeMultiSelect,
 	ROKOConversationTreeNodePromptTypeMultipleChoice,
 	ROKOConversationTreeNodePromptTypeRichMediaCard
 };
@@ -33,5 +34,7 @@ typedef NS_ENUM(NSInteger, ROKOConversationTreeNodeErrorAction) {
 @property (nonatomic, copy) NSString *validationErrorMessage;
 @property (nonatomic, assign) ROKOConversationTreeNodeErrorAction errorAction;
 @property (nonatomic, strong) NSArray <ROKOInstaBotConversationAction *> *actions;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary saveNodesToMap:(NSMutableDictionary<NSNumber *, ROKOInstaBotConversationTreeNode *> *)map;
 
 @end

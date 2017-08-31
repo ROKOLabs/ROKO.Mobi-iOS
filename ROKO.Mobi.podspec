@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ROKO.Mobi"
-  s.version          = "1.12.2"
+  s.version          = "1.12.3"
   s.license          = 'MPL'
   s.homepage         = "https://github.com/ROKOLabs/ROKO.Mobi.iOS"
   s.author           = "ROKO Labs"
@@ -10,7 +10,7 @@ The ROKO.Mobi SDK provides a means for taking photos, dressing them up in sticke
                        DESC
 
   s.source           = { :git => "https://github.com/ROKOLabs/ROKO.Mobi.iOS.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/rokolabs'
+  s.social_media_url = 'https://roko.mobi'
   s.platform         = :ios, '8.0'
   s.requires_arc     = true
   s.vendored_frameworks = 'Framework/ROKOMobi.framework'

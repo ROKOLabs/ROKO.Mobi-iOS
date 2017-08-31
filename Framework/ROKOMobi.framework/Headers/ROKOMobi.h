@@ -47,3 +47,24 @@ FOUNDATION_EXPORT const unsigned char ROKOMobiVersionString[];
 #import <ROKOMobi/ROKOStickersEventItem.h>
 #import <ROKOMobi/RLPhotoStickersViewController.h>
 #import <ROKOMobi/RLImagesCache.h>
+
+
+
+/**
+ The entry point of ROKOMobi framework
+ */
+@interface ROKOMobi : NSObject
+
+/**
+  Initializes ROKOMobi framework
+ */
++ (void)start;
+
+/**
+ Returns current version of ROKOMobi framework
+
+ @return Current framework version
+ */
++ (NSString *)version;
+
+@end
